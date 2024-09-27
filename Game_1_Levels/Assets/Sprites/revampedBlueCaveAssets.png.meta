@@ -1,0 +1,1051 @@
+fileFormatVersion: 2
+guid: ccc64889eaaac604b8775aebb2f7ed04
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 59
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_0
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 728
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f557271f04789b640a38034f98bdc64c
+      internalID: -698797086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_1
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 728
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7326614e54b4848ae760388264f5dd
+      internalID: 1428689140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_2
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 728
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ea63be22df3d249843a70c7ba21b99
+      internalID: -506350643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_3
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 728
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a844f78998ab2e744bc24e7ce3b71850
+      internalID: -1482788543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_4
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 728
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d61f0bbdffc8bc44b196b4ade709b58
+      internalID: -1920788496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_5
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 728
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00c244af9515d546a8c835c73ce5fb2
+      internalID: 108985653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_6
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 749
+        width: 57
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf7e46a3d2b3344d932a84c890f3074
+      internalID: 1862712299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_7
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 749
+        width: 59
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83339d4cf89a174689dd692b98cb084
+      internalID: 1905730671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_8
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 751
+        width: 401
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a68ae2cfce00cc943bf7523f673e1603
+      internalID: 605055543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_9
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 661
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ac568cf7fb2ef4495ba8236773e226
+      internalID: 1369856799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_10
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 661
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be851c86ba2e27043b5dc2d207f50087
+      internalID: -238114453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_11
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 661
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8924c94192f46dc46906bd120b1fe395
+      internalID: 440107007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_12
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 661
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 862eff36ac0968a4ca20932393e45e2e
+      internalID: 1225370503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_13
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 661
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70be5712a4c0fac4ea5b7dff82a858cd
+      internalID: 734579839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_14
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 661
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ffb04365d49d4d4d9e2fcd2f51721d3
+      internalID: -731387200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_15
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 685
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a1b85b456eb30488291e59e5d7960f
+      internalID: -954655953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_16
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 689
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed42b64d764e0054c878a8c436712b7e
+      internalID: 1237856974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_17
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 681
+        width: 56
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d318e486e4a5b4dafab03d0dcd84ac
+      internalID: 521783380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_18
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 593
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba07658bbf92f84eb1d3cf6ff0a0c8f
+      internalID: 455733570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_19
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 593
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd76ace71e14aec4297045de663560e4
+      internalID: -2081834658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_20
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 595
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd4381c25bfed043840c24a62155ed5
+      internalID: 1958583158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_21
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 595
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a55391e2c60b8fa4db7f4ba91e42ea26
+      internalID: -498920450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_22
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 593
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afeeefc9d3644604ba73a4a664bd4c02
+      internalID: -1932974322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_23
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 593
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c776244f35708408149b2043671a03
+      internalID: 370664698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_24
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 623
+        width: 55
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15329da65f7bbd141bdd484d93a8144d
+      internalID: -1374066404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_25
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 616
+        width: 58
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757b40a5e99df7a44bbc4d7e7cd4cc4a
+      internalID: -145964474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_26
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 617
+        width: 57
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153d0904e75938645936380a8ce3fe3e
+      internalID: 1335871138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_27
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 525
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0024a96da5da10f4abc98cfcfcb5b954
+      internalID: 365992903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_28
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 525
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1536382fa072aa409c84bb3ec535915
+      internalID: 707795141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_29
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 527
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d3fde678eb86194faa79b4f04cb9dc7
+      internalID: -36810313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_30
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 527
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414c7523b71c4894c87ea161e83da2b5
+      internalID: 1947658877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_31
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 525
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570a8af8164e8ae4698242f05b7641a0
+      internalID: 1595630139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_32
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 525
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbddc205e79f9184b920c0e00dbbcbd1
+      internalID: -2055213619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_33
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 557
+        width: 60
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0006cf0347c1b44ade865a4455f148
+      internalID: 1385652617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_34
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 540
+        width: 59
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d296ade47905641b64c0b0f16c71b1
+      internalID: -1814815682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_35
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 557
+        width: 57
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd5ea1035144654a94a09ea26d13312
+      internalID: -186675727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_36
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 457
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac7f37219615684585ecc31d8444ef4
+      internalID: -1492272438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_37
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 457
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30b5649d483345428efa728f70b0ee1
+      internalID: -1942549653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_38
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 457
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168a42a93c0d4df4ca5813109e3093e2
+      internalID: 498796763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_39
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 457
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9413d35125d394899446ffe9450a9e
+      internalID: -1436005419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_40
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 455
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20308cff64f424a44bca15cdf0ea2cf0
+      internalID: -1790025161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: revampedBlueCaveAssets_41
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 455
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580e47bc041258d4fbdcc78cf2ffc96e
+      internalID: 1593064869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      revampedBlueCaveAssets_0: -698797086
+      revampedBlueCaveAssets_1: 1428689140
+      revampedBlueCaveAssets_10: -238114453
+      revampedBlueCaveAssets_11: 440107007
+      revampedBlueCaveAssets_12: 1225370503
+      revampedBlueCaveAssets_13: 734579839
+      revampedBlueCaveAssets_14: -731387200
+      revampedBlueCaveAssets_15: -954655953
+      revampedBlueCaveAssets_16: 1237856974
+      revampedBlueCaveAssets_17: 521783380
+      revampedBlueCaveAssets_18: 455733570
+      revampedBlueCaveAssets_19: -2081834658
+      revampedBlueCaveAssets_2: -506350643
+      revampedBlueCaveAssets_20: 1958583158
+      revampedBlueCaveAssets_21: -498920450
+      revampedBlueCaveAssets_22: -1932974322
+      revampedBlueCaveAssets_23: 370664698
+      revampedBlueCaveAssets_24: -1374066404
+      revampedBlueCaveAssets_25: -145964474
+      revampedBlueCaveAssets_26: 1335871138
+      revampedBlueCaveAssets_27: 365992903
+      revampedBlueCaveAssets_28: 707795141
+      revampedBlueCaveAssets_29: -36810313
+      revampedBlueCaveAssets_3: -1482788543
+      revampedBlueCaveAssets_30: 1947658877
+      revampedBlueCaveAssets_31: 1595630139
+      revampedBlueCaveAssets_32: -2055213619
+      revampedBlueCaveAssets_33: 1385652617
+      revampedBlueCaveAssets_34: -1814815682
+      revampedBlueCaveAssets_35: -186675727
+      revampedBlueCaveAssets_36: -1492272438
+      revampedBlueCaveAssets_37: -1942549653
+      revampedBlueCaveAssets_38: 498796763
+      revampedBlueCaveAssets_39: -1436005419
+      revampedBlueCaveAssets_4: -1920788496
+      revampedBlueCaveAssets_40: -1790025161
+      revampedBlueCaveAssets_41: 1593064869
+      revampedBlueCaveAssets_5: 108985653
+      revampedBlueCaveAssets_6: 1862712299
+      revampedBlueCaveAssets_7: 1905730671
+      revampedBlueCaveAssets_8: 605055543
+      revampedBlueCaveAssets_9: 1369856799
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
