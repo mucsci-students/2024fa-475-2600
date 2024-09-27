@@ -14,7 +14,7 @@ public class SlopeEnabler : MonoBehaviour
         player.GetComponent<SlopeCheck>().enabled = false;
     }
 
-    void OnTriggerEnter2D (Collider2D other)
+    void OnTriggerStay2D (Collider2D other)
     {
         (player.GetComponent(script) as MonoBehaviour).enabled = true;
         print("Script is enabled");
