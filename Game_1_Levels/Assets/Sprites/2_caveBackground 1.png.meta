@@ -1,0 +1,3295 @@
+fileFormatVersion: 2
+guid: 1f94892265b639844bc170a9916ef967
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2_caveBackground 1_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 547
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5646ebb9d5f2446836927a3a7a0823
+      internalID: 314598958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 547
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f288f61a663b840bb2b4057dcc58be
+      internalID: 1623723098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_2
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 547
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9f3bca0c8fbab14aac8b6ec22496bce
+      internalID: -1277264579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_3
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 547
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd06563087d61845bdfb96ba1c0079e
+      internalID: 1659761581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_4
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 547
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb4be97790d1384b8adb1e16c415a72
+      internalID: 1461695509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_5
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 547
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8954b9b6b24b4a64697552c09d9ec5db
+      internalID: -1688609868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_6
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 547
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db8842ff6739b247ab24338f062c54c
+      internalID: -1848896309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_7
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 547
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2941debed572354396f2aa77b4099e4
+      internalID: 1755675445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_8
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 547
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef9116efa6a90264591b1c32147152af
+      internalID: -1713305804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_9
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 547
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7e71de97e214641a45a9dec6114e85
+      internalID: -106466329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_10
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 547
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c05aaf74a705449b4578cf4a007220
+      internalID: -85415977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_11
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 547
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ea9dbb6170caa4f9d2b14025342047
+      internalID: 1109300610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_12
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 547
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4938c1657e7caf4f8a914d640bc1921
+      internalID: 1387511920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_13
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 547
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ecd98c64420964da1320a6d74292c0
+      internalID: 1878132386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_14
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 547
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3887c56335512a41b1f56f0a286d62e
+      internalID: -351623962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_15
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 547
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a64c5ebf62c2264cbebc623adfdec56
+      internalID: 318110419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_16
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 483
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167834c0f4b76cf438257a1f3a8ed7f4
+      internalID: 629638342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_17
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 483
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3256519762dcf62458125e7961fd9d45
+      internalID: 489538526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_18
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 483
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9626479d2a4a9224588cda9302f7a5fc
+      internalID: -812387690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_19
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 483
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8e129736c5dae42bc0aa94b81472b1
+      internalID: -1805882121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_20
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 483
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2120b669c21814a82695bbbcae229f
+      internalID: 1613183300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_21
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 483
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6978fefdfdfbc0a4b83d6b1be4807416
+      internalID: -646612032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_22
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 483
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5774286560463f4d96cf4d564ad09d7
+      internalID: 754720216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_23
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 483
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b486987fd888d4bbf9685a30a7116a
+      internalID: 889337874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_24
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 483
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb44e343ba9d2f4ea372a11e6462264
+      internalID: -895766516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_25
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 483
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 185ce31fec49a5e43b19cae3feafb44a
+      internalID: -583353301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_26
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 483
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c9f3e397695704e9b6ddfdb0408be2
+      internalID: -305314167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_27
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 483
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f74a5e81f3bd28429968bb16f2811b7
+      internalID: -8989254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_28
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 483
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58904ff1608a4f34c90fe55a744e3f48
+      internalID: -841155044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_29
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 483
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6c4739323976c4587a0f3acb3c861e
+      internalID: -1454161826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_30
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 483
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f6b645599e7314d850fd92ead8eb06
+      internalID: -763477678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_31
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 483
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9321fee44f00e64986c755273805215
+      internalID: -1680128537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_32
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 419
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6a0668826656042aab46a861736fdd
+      internalID: -1694903323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_33
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 419
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2cbb56d5978a2a43930bfc9752436a0
+      internalID: -772043729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_34
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 419
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec42b33e675ccf45b9647233bec2289
+      internalID: 574897684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_35
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 419
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a722adf20c5e942ac9047315d7d6b3
+      internalID: -1492743551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_36
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 419
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73e53ae82fc76346b3d36b9bf3fd449
+      internalID: 1367175278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_37
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 419
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b7f67f88202744e91aaf79c8538cd0
+      internalID: -73921944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_38
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 419
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8424e9eac52e0334fb6a536aad307a4e
+      internalID: 650581317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_39
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 419
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d1b144f5df8574ba5a58c85ac93692
+      internalID: 982180631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_40
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 419
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6190a8ba5d8af469a2241b2436b8d4
+      internalID: 1018287431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_41
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 419
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae0240e9e7dc364285b42327d5485e5
+      internalID: -1911951224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_42
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 419
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2294063d99926b9459c8adb8af0c6019
+      internalID: 939407184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_43
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 419
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4673e6769eeeb244a0fcd4d16e49c2e
+      internalID: 1087816012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_44
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 419
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e860a41665839284895a3308e4ffeb76
+      internalID: -1431001514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_45
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 419
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21230b32533e21c41bd6cea07bd30f6e
+      internalID: -644701107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_46
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 419
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366d79bd3b1f6f740b35e026d9cd2a44
+      internalID: 973886617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_47
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 419
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc2358a33b3083498a61ef43302185f
+      internalID: -1310650152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_48
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 355
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e6f6bc55f43bd4080d2df2caa0679b
+      internalID: 147386579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_49
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 355
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 402521c9c7acbd74e91670f8765cbc5e
+      internalID: -1710008615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_50
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 355
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b5acf4a3f70ad42b0b469be51a44e1
+      internalID: -392597111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_51
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 355
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8372032b9285b47b29827ef4a0c4a9
+      internalID: -2033449748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_52
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 355
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17b844ffe4fd8df45b94933d07584d29
+      internalID: -443434742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_53
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 355
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f295fb46f9e7c614ab45f0ae3758c084
+      internalID: -312532723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_54
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 355
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f78cd507f35014b92ecc1fdc42bd32
+      internalID: 775206295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_55
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 355
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64c244c3a850344dace54ab002fd415
+      internalID: -1027221181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_56
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 355
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0be1c4eff01dc41aaf4d0f2226a495
+      internalID: -230104502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_57
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 355
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e197f442cd8ca7f409f049ee01247851
+      internalID: 2124015114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_58
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 355
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e05f0c7aed8e54aa7066a82aa55a05
+      internalID: 230145612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_59
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 355
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a56c3f5d4dc1c46bb0a5acd8411493
+      internalID: -1332865996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_60
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 355
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad462c9c7127dd041988fc5928c00e9b
+      internalID: 523808658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_61
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 355
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656874ef2c008974f905fe22a94c6c17
+      internalID: 336236237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_62
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 355
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d640d5d8e8ba4e547887b0ec93a3bc47
+      internalID: 1402804757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_63
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 355
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a85803449aaa4479e9e0ad3e43a982
+      internalID: 534762533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_64
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 291
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4250d6c3aa57a1540951a4486377f105
+      internalID: 1215780168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_65
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 291
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa67d812b915804409c506e3ab463fa4
+      internalID: 1770348363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_66
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 291
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ec19144b0eb1c43a7b1e595579c7cc
+      internalID: -177640196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_67
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 291
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6af34fc491ac98488552427418adf30
+      internalID: 978890483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_68
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 291
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6490ad1da4e1bff4b84d887a8297954f
+      internalID: -597804069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_69
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 291
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3874f0f5624f9842b812b2fa4f6a2ef
+      internalID: -151182804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_70
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 291
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8efb7ddc1c261534bac93c1b1b8f8f07
+      internalID: -339079561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_71
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 291
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b45ebb18a64cd44591277986c775c28
+      internalID: -1838067377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_72
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 291
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7ed904cdb46564a9ba0167b1b6e969
+      internalID: 1440429241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_73
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 291
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0632f0c945a80e34e9953df805858b83
+      internalID: 1828253986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_74
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 291
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b4a6561d8a5f074ca6d275a646f2d2d
+      internalID: 355877943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_75
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 291
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d4a832c22324614d9d9472c322cdf02
+      internalID: 1274774206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_76
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 291
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380dfa1e9a74e994b974d3112f0b03f1
+      internalID: -1521614917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_77
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 291
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09589fe5ec3abd042ae2240d1e7bb3de
+      internalID: 837566389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_78
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 291
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de322a4f7d2533541b8a1cb7afde5965
+      internalID: -903771023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_79
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 291
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5fd510251b01c2479454251cf4c5ebc
+      internalID: -239751114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_80
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 227
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e10047b72f1fb1a4ea4356f1bb0307f9
+      internalID: 1542212729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_81
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 227
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991ce1fae6093404299a3247c6694adf
+      internalID: 1461080565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_82
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 227
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ecb43f83683b1745a10b3aa23ef86df
+      internalID: -1091656400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_83
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 227
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d30b3fb706ed04aaf4e73c9541dfbf
+      internalID: 901051059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_84
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 227
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77eb4c42e233e3488c88103900ef916
+      internalID: 1729326385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_85
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 227
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe84ae9d621f8b4abc1deebf20676c1
+      internalID: 1396692415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_86
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 227
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78837ce8de3b0f14f83fdfb8acf84ac3
+      internalID: -1338430793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_87
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 227
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425fd50462d3d9847a035cf5bdd057e4
+      internalID: -795981230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_88
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 227
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b3e944f2e30dd42a6aed696b7729ae
+      internalID: 1189269207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_89
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 227
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae2f5583f101c64f9c1c8307260f2bf
+      internalID: 1098310831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_90
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 227
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b78797c95bdae1458380ce1cceeae95
+      internalID: 248780113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_91
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 227
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb3c381b9955bd469ccb396db56069e
+      internalID: -1255677972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_92
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 227
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c79ad80f74544f4b8e89c4c2c702d66
+      internalID: 1581177719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_93
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 227
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8641c68a6e83ba4ea30750ee16f0a07
+      internalID: -752550741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_94
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 227
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68246480f2838f241a37419a2fef427b
+      internalID: -345159378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_95
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 227
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2554957694c453b4bb2166942a4eb885
+      internalID: 621706414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_96
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 163
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bcdeea8c25e7914b83951979a82a58a
+      internalID: -286143049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_97
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 163
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441295cfb5ef5454595494324ebb0565
+      internalID: -198001638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_98
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 163
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4dbcb12534af74aa04d46ca4e90338
+      internalID: 1150789499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_99
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 163
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d349e1e3ac100f04c82558ef48c33fe2
+      internalID: -1982885637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_100
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 163
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f539c25afa9f9f4185068181a48f2cc
+      internalID: -939681129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_101
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 163
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d1c9fbeaa958a4082e59e218db12ba
+      internalID: -1620705412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_102
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 163
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a71ba906ac60f478bf5f4d00cb194f
+      internalID: -903652627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_103
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 163
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f59f3081b6d2db743bb70f9cea642225
+      internalID: 413751105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_104
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 163
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05147d2e075ddad4199321553baecb89
+      internalID: -1239908722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_105
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 163
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf36b57b936b8c84dbb502bbbb396edf
+      internalID: -694973588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_106
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 163
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c82e375b0fb646428bb767346dc8dc0
+      internalID: -2099577424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_107
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 163
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbed590108540f94d88b596808ca7db8
+      internalID: 1654118610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_108
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 163
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec93568964efb444f807152c13064164
+      internalID: -33216702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_109
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 163
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8667af813e4a5b49930a9d5f64cd33d
+      internalID: -2084322728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_110
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 163
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8196e0d984f11e848bf2dd07c8bab606
+      internalID: -687451420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_111
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 163
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d46e7f9d46880e04580b7c45138fb876
+      internalID: -985371763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_112
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 99
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9f3d4f487d0fb4db661ddde7e47d4b
+      internalID: 186320774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_113
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 99
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466a3a8ac59867d40bf5379e9e049147
+      internalID: -938846767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_114
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 99
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc9f1f26a215764a8cce825e8861b12
+      internalID: -270899386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_115
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 99
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86fae9aa628c284bb1188a9a01572b3
+      internalID: 9838497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_116
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 99
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85228143c157274683c10e8ec7e4b21
+      internalID: -450828452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_117
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 99
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b216adb4b5e59a4bac8ac7d79bf0407
+      internalID: -1912208472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_118
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 99
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061fdae80a8926649a3f9138936767ef
+      internalID: 910405228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_119
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 99
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b88284d6e414ecd499f3c2f1ecf8057f
+      internalID: 43020554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_120
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 99
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c1a382bafee4247b65b502707a6d5d
+      internalID: 186784054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_121
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 99
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa94e3e42d2bcf74b82e2ea180404b72
+      internalID: -1302336393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_122
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 99
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f140aeed6b718ac4c9c7bc636cb9e15a
+      internalID: -1190692833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_123
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 99
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659147bf43ce14d48b3833a34342eede
+      internalID: 721619750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_124
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 99
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b81fb8074858fa48ae6569d68c9f6c9
+      internalID: 816261612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_125
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 99
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e54088648323234d9ce78c6bafc2908
+      internalID: 111351851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_126
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 99
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac68660ab147ef3478ccbaf19b8db79b
+      internalID: -525252061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_127
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 99
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ddbdea68965f34da253b8adaa77a41
+      internalID: 188767249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_128
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 35
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a988e867cbaffc54bb2ab75c3827b0a7
+      internalID: 1911933770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_129
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 35
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6958824563bf53540af705d99e22c347
+      internalID: -274171423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_130
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 35
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba31367cd9dbfa8419b2fa8cc4c296d0
+      internalID: 2108658195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_131
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 35
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b742affe5becb044faae602e52ee888c
+      internalID: -1143075604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_132
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 35
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbecf26604ed7fc4db65f377c014bea3
+      internalID: -1025703954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_133
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 35
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 907b6426734c1ad4081635b45100cac1
+      internalID: -877547385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_134
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 35
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc5339d603c1bb49a60b76b2eee4d2a
+      internalID: -548698805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_135
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 35
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7548173bd60ed4aa14418737e9ff5c
+      internalID: 943735660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_136
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 35
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c6c041f029b6041a7e5e6ee5381e34
+      internalID: -1748104451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_137
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 35
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea14fb8df67cb540a72c818cfa424ea
+      internalID: 475509324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_138
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 35
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7c19257271a75479b560c709482096
+      internalID: 1521357352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_139
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 35
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e26ef5a4f38d334c9d6148af9b20c29
+      internalID: -1811812400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_140
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 35
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c5ce0f76da20e48aab82fcdb3c840e
+      internalID: -1749622912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_141
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 35
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae8489550db28d4badccfb30a10b0c8
+      internalID: -2076088163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_142
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 35
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d29992678d2e864287f02852afae2b4
+      internalID: -1566152189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_caveBackground 1_143
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 35
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9d53eb514940f4dbc47735e1f85701
+      internalID: -578687030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      2_caveBackground 1_0: 314598958
+      2_caveBackground 1_1: 1623723098
+      2_caveBackground 1_10: -85415977
+      2_caveBackground 1_100: -939681129
+      2_caveBackground 1_101: -1620705412
+      2_caveBackground 1_102: -903652627
+      2_caveBackground 1_103: 413751105
+      2_caveBackground 1_104: -1239908722
+      2_caveBackground 1_105: -694973588
+      2_caveBackground 1_106: -2099577424
+      2_caveBackground 1_107: 1654118610
+      2_caveBackground 1_108: -33216702
+      2_caveBackground 1_109: -2084322728
+      2_caveBackground 1_11: 1109300610
+      2_caveBackground 1_110: -687451420
+      2_caveBackground 1_111: -985371763
+      2_caveBackground 1_112: 186320774
+      2_caveBackground 1_113: -938846767
+      2_caveBackground 1_114: -270899386
+      2_caveBackground 1_115: 9838497
+      2_caveBackground 1_116: -450828452
+      2_caveBackground 1_117: -1912208472
+      2_caveBackground 1_118: 910405228
+      2_caveBackground 1_119: 43020554
+      2_caveBackground 1_12: 1387511920
+      2_caveBackground 1_120: 186784054
+      2_caveBackground 1_121: -1302336393
+      2_caveBackground 1_122: -1190692833
+      2_caveBackground 1_123: 721619750
+      2_caveBackground 1_124: 816261612
+      2_caveBackground 1_125: 111351851
+      2_caveBackground 1_126: -525252061
+      2_caveBackground 1_127: 188767249
+      2_caveBackground 1_128: 1911933770
+      2_caveBackground 1_129: -274171423
+      2_caveBackground 1_13: 1878132386
+      2_caveBackground 1_130: 2108658195
+      2_caveBackground 1_131: -1143075604
+      2_caveBackground 1_132: -1025703954
+      2_caveBackground 1_133: -877547385
+      2_caveBackground 1_134: -548698805
+      2_caveBackground 1_135: 943735660
+      2_caveBackground 1_136: -1748104451
+      2_caveBackground 1_137: 475509324
+      2_caveBackground 1_138: 1521357352
+      2_caveBackground 1_139: -1811812400
+      2_caveBackground 1_14: -351623962
+      2_caveBackground 1_140: -1749622912
+      2_caveBackground 1_141: -2076088163
+      2_caveBackground 1_142: -1566152189
+      2_caveBackground 1_143: -578687030
+      2_caveBackground 1_15: 318110419
+      2_caveBackground 1_16: 629638342
+      2_caveBackground 1_17: 489538526
+      2_caveBackground 1_18: -812387690
+      2_caveBackground 1_19: -1805882121
+      2_caveBackground 1_2: -1277264579
+      2_caveBackground 1_20: 1613183300
+      2_caveBackground 1_21: -646612032
+      2_caveBackground 1_22: 754720216
+      2_caveBackground 1_23: 889337874
+      2_caveBackground 1_24: -895766516
+      2_caveBackground 1_25: -583353301
+      2_caveBackground 1_26: -305314167
+      2_caveBackground 1_27: -8989254
+      2_caveBackground 1_28: -841155044
+      2_caveBackground 1_29: -1454161826
+      2_caveBackground 1_3: 1659761581
+      2_caveBackground 1_30: -763477678
+      2_caveBackground 1_31: -1680128537
+      2_caveBackground 1_32: -1694903323
+      2_caveBackground 1_33: -772043729
+      2_caveBackground 1_34: 574897684
+      2_caveBackground 1_35: -1492743551
+      2_caveBackground 1_36: 1367175278
+      2_caveBackground 1_37: -73921944
+      2_caveBackground 1_38: 650581317
+      2_caveBackground 1_39: 982180631
+      2_caveBackground 1_4: 1461695509
+      2_caveBackground 1_40: 1018287431
+      2_caveBackground 1_41: -1911951224
+      2_caveBackground 1_42: 939407184
+      2_caveBackground 1_43: 1087816012
+      2_caveBackground 1_44: -1431001514
+      2_caveBackground 1_45: -644701107
+      2_caveBackground 1_46: 973886617
+      2_caveBackground 1_47: -1310650152
+      2_caveBackground 1_48: 147386579
+      2_caveBackground 1_49: -1710008615
+      2_caveBackground 1_5: -1688609868
+      2_caveBackground 1_50: -392597111
+      2_caveBackground 1_51: -2033449748
+      2_caveBackground 1_52: -443434742
+      2_caveBackground 1_53: -312532723
+      2_caveBackground 1_54: 775206295
+      2_caveBackground 1_55: -1027221181
+      2_caveBackground 1_56: -230104502
+      2_caveBackground 1_57: 2124015114
+      2_caveBackground 1_58: 230145612
+      2_caveBackground 1_59: -1332865996
+      2_caveBackground 1_6: -1848896309
+      2_caveBackground 1_60: 523808658
+      2_caveBackground 1_61: 336236237
+      2_caveBackground 1_62: 1402804757
+      2_caveBackground 1_63: 534762533
+      2_caveBackground 1_64: 1215780168
+      2_caveBackground 1_65: 1770348363
+      2_caveBackground 1_66: -177640196
+      2_caveBackground 1_67: 978890483
+      2_caveBackground 1_68: -597804069
+      2_caveBackground 1_69: -151182804
+      2_caveBackground 1_7: 1755675445
+      2_caveBackground 1_70: -339079561
+      2_caveBackground 1_71: -1838067377
+      2_caveBackground 1_72: 1440429241
+      2_caveBackground 1_73: 1828253986
+      2_caveBackground 1_74: 355877943
+      2_caveBackground 1_75: 1274774206
+      2_caveBackground 1_76: -1521614917
+      2_caveBackground 1_77: 837566389
+      2_caveBackground 1_78: -903771023
+      2_caveBackground 1_79: -239751114
+      2_caveBackground 1_8: -1713305804
+      2_caveBackground 1_80: 1542212729
+      2_caveBackground 1_81: 1461080565
+      2_caveBackground 1_82: -1091656400
+      2_caveBackground 1_83: 901051059
+      2_caveBackground 1_84: 1729326385
+      2_caveBackground 1_85: 1396692415
+      2_caveBackground 1_86: -1338430793
+      2_caveBackground 1_87: -795981230
+      2_caveBackground 1_88: 1189269207
+      2_caveBackground 1_89: 1098310831
+      2_caveBackground 1_9: -106466329
+      2_caveBackground 1_90: 248780113
+      2_caveBackground 1_91: -1255677972
+      2_caveBackground 1_92: 1581177719
+      2_caveBackground 1_93: -752550741
+      2_caveBackground 1_94: -345159378
+      2_caveBackground 1_95: 621706414
+      2_caveBackground 1_96: -286143049
+      2_caveBackground 1_97: -198001638
+      2_caveBackground 1_98: 1150789499
+      2_caveBackground 1_99: -1982885637
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

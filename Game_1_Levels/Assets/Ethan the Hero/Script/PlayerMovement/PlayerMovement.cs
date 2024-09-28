@@ -12,8 +12,8 @@ namespace EthanTheHero
 		[SerializeField] private float lastOnGroundTime;
 		[SerializeField] private Transform groundCheckPoint;
 		[SerializeField] private Vector2 groundCheckSize = new Vector2(0.49f, 0.03f);
-		[SerializeField] private LayerMask groundLayer;
-		[SerializeField] private LayerMask wallLayer;
+		[SerializeField] public LayerMask groundLayer;
+		[SerializeField] public LayerMask wallLayer;
 		[SerializeField] private Transform WallCheck;
 
 		[HideInInspector] public Vector2 move;
