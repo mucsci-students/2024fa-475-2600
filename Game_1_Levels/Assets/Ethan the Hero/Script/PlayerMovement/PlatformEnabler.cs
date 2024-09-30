@@ -20,5 +20,5 @@ public class PlatformEnabler : MonoBehaviour
     // private void OnTriggerExit2D (Collider2D other)
     // {
     //     player.GetComponent<PlayerMovement>().groundLayer = "Foreground";
-    // }
+    //}
 }
