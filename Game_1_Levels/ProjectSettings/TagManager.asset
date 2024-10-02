@@ -78,6 +78,9 @@ TagManager:
   - name: Fg_Other
     uniqueID: 357435657
     locked: 0
+  - name: Spikes
+    uniqueID: 2893730513
+    locked: 0
   - name: Walls
     uniqueID: 3255336481
     locked: 0
