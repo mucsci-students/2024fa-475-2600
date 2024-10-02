@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class no_S_SlopeEnabler : MonoBehaviour
 {
-private GameObject player;
+    private GameObject player;
     private string script;
 
     void Start()
