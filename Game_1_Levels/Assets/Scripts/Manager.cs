@@ -9,6 +9,8 @@ public class Manager : MonoBehaviour
     public Transform SpawnPoint1;
     public Transform SpawnPoint2;
     public Transform BossSpawnPoint;
+    public Transform LavaSpawn;
+    public Transform PreLavaSpawn;
     private Transform currentSpawnPoint;
     private GameObject player;
     public bool isDie = false;
@@ -22,13 +24,17 @@ public class Manager : MonoBehaviour
     public void PositionPlayer()
 	{
 		player.transform.position = currentSpawnPoint.transform.position;
-        script.heal(100);
+        script.heal(200);
         isDie = false;
 	}
 
     public void setSpawnPoint(int spawnpoint)
     {
-        if (spawnpoint == 1)
+        if (spawnpoint == 0)
+        {
+            currentSpawnPoint = StartSpawnPoint;
+        }
+        else if (spawnpoint == 1)
         {
             currentSpawnPoint = SpawnPoint1;
         }
@@ -39,6 +45,14 @@ public class Manager : MonoBehaviour
         else if (spawnpoint == 3)
         {
             currentSpawnPoint = BossSpawnPoint;
+        }
+        else if (spawnpoint == 4)
+        {
+            currentSpawnPoint = LavaSpawn;
+        }
+        else if (spawnpoint == 5)
+        {
+            currentSpawnPoint = PreLavaSpawn;
         }
     }
     void Update ()
