@@ -12,7 +12,6 @@ public class SlopeEnabler : MonoBehaviour
         script = "SlopeCheck";
         player = GameObject.FindWithTag("Player");
         (player.GetComponent(script) as MonoBehaviour).enabled = false;
-        //player.GetComponent<SlopeCheck>().enabled = false;
     }
 
     void Update()
