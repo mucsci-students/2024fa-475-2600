@@ -3,6 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
+  tags:
+  - Character
+  - OneWayPlatform
+  - PowerUp
+=======
   tags: []
   layers:
   - Default
