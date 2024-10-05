@@ -8,6 +8,7 @@ TagManager:
   - OneWayPlatform
   - Wall
   - PowerUp
+  - Chest
   layers:
   - Default
   - TransparentFX
