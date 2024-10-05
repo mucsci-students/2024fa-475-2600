@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class PowerUpTrigger : MonoBehaviour
 {
-   
+    private GameObject powerUp;
+
+    void Start(){
+        powerUp = GameObject.FindWithTag("PowerUp");
+    }
     void OnTriggerEnter2D (Collider2D other)
     {
-        print(other.gameObject.name + " has entered the cube");
+     
+     Destroy(powerUp);
+     print("PowerUp Destroyed");
     }
 }
