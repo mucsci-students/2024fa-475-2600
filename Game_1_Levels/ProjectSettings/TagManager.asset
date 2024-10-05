@@ -3,14 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-<<<<<<< HEAD
   tags:
   - Character
   - OneWayPlatform
   - PowerUp
-=======
-  tags: []
->>>>>>> eceaf2c8bcfceb223b075a2d75a60738f60b854d
   layers:
   - Default
   - TransparentFX
