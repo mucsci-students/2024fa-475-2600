@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: PlayerMovement
   m_EditorClassIdentifier: 
   runMaxSpeed: 6
-  runAcceleration: 2
-  runAccelAmount: 16.666666
+  runAcceleration: 1
+  runAccelAmount: 8.333333
   runDecceleration: 1
   runDeccelAmount: 8.333333
   accelInAir: 0.5
