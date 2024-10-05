@@ -6,7 +6,7 @@ using UnityEngine.Tilemaps;
 public class PlatformDisabler : MonoBehaviour
 {
     private TilemapCollider2D platforms;
-    public float waitTime;
+    public float waitTime = 1;
 
     void Start()
     {
