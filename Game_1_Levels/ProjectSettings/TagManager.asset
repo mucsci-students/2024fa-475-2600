@@ -64,9 +64,6 @@ TagManager:
   - name: CaveBG
     uniqueID: 1128127151
     locked: 0
-  - name: Bg0
-    uniqueID: 233166777
-    locked: 0
   - name: Decor3
     uniqueID: 1542235545
     locked: 0
@@ -75,6 +72,9 @@ TagManager:
     locked: 0
   - name: Decor1
     uniqueID: 2467572225
+    locked: 0
+  - name: Bg0
+    uniqueID: 233166777
     locked: 0
   - name: Fg
     uniqueID: 1009742879
