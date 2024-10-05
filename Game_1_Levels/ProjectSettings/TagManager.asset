@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Character
   - OneWayPlatform
-  - PowerUp
   layers:
   - Default
   - TransparentFX
