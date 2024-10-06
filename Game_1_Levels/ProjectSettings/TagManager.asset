@@ -8,6 +8,8 @@ TagManager:
   - OneWayPlatform
   - Chest
   - cannonBall
+  - PowerUp
+  - Sword
   layers:
   - Default
   - TransparentFX
