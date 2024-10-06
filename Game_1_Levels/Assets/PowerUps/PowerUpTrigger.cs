@@ -11,7 +11,7 @@ public class PowerUpTrigger : MonoBehaviour
     }
     void OnTriggerEnter2D (Collider2D other)
     {
-
+     
      Destroy(powerUp);
      print("PowerUp Destroyed");
     }
