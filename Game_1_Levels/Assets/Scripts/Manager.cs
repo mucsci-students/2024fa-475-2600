@@ -5,6 +5,7 @@ using UnityEngine;
 public class Manager : MonoBehaviour
 {
     public HealthManager script;
+    public Respawn respawner;
     public Transform StartSpawnPoint;
     public Transform SpawnPoint1;
     public Transform SpawnPoint2;
@@ -59,7 +60,7 @@ public class Manager : MonoBehaviour
 	{
 		if (isDie)
 		{
-			PositionPlayer();
+            respawner.Die();
 		}
 	}
 }
