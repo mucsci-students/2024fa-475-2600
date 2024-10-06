@@ -144,6 +144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed0ecee95fd5c144ea8aa9bfde40afe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefab: {fileID: 2055486203663918819, guid: 5dcbfd189d4775d4ba5159331902572a, type: 3}
+  spawnPoint: {fileID: 0}
 --- !u!95 &1935513086901061920
 Animator:
   serializedVersion: 5

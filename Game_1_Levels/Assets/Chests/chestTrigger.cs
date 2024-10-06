@@ -20,10 +20,13 @@ public class chestTrigger : MonoBehaviour
 
    void OnTriggerEnter2D (Collider2D other)
     {
-       if(anim.GetBool("isClosed")){
+     //if(other.tag=="Sword"){
+        Debug.Log("Object entered: " + other.gameObject.name + " with tag: " + other.tag);
+          if(anim.GetBool("isClosed")){
         Instantiate(prefab,spawnPoint.position,spawnPoint.rotation);
         anim.SetBool("isClosed",false);
        }
+     //}
        
     }
 }
