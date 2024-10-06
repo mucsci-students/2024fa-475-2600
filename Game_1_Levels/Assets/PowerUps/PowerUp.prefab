@@ -115,10 +115,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6103394754325161546}
-  - component: {fileID: 1177151275250258588}
   - component: {fileID: 6390916045256499049}
   - component: {fileID: 8830354042475737480}
   - component: {fileID: 3251456549479980410}
+  - component: {fileID: 2568286050580037473}
   m_Layer: 0
   m_Name: PowerUp
   m_TagString: PowerUp
@@ -144,18 +144,6 @@ Transform:
   - {fileID: 294381787058004327}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1177151275250258588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2055486203663918819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1f9e053436a6e640a61cd4b66dfb690, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &6390916045256499049
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -215,6 +203,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 97d2d72c765f64f4dbaaceee3ea9663c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2568286050580037473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055486203663918819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b79507545267db479972acc2e2c020b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2130162063257827634
