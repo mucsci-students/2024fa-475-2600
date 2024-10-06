@@ -74,6 +74,9 @@ TagManager:
   - name: Decor1
     uniqueID: 2467572225
     locked: 0
+  - name: Decor0
+    uniqueID: 2681234897
+    locked: 0
   - name: Bg0
     uniqueID: 233166777
     locked: 0

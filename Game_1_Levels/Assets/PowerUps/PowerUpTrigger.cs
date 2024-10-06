@@ -14,7 +14,7 @@ public class PowerUpTrigger : MonoBehaviour
     void OnTriggerEnter2D (Collider2D other)
     {
         if(other.tag == "Player"){
-        //Choose which aura to activate on the player
+            //Choose which aura to activate on the player
 
         //ice
         if(powerUp.transform.Find(powerUpSprites[0]).gameObject.activeSelf){
@@ -28,8 +28,7 @@ public class PowerUpTrigger : MonoBehaviour
             other.transform.Find(auras[2]).gameObject.SetActive(true);
         }
 
-        aura_control auraControl = other.transform.gameObject.GetComponent<aura_control>();
-        auraControl.auraActive = true;
+        
         Destroy(powerUp);
         print("PowerUp Destroyed");
         }
