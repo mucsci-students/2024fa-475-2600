@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: 1177151275250258588}
   - component: {fileID: 6390916045256499049}
   - component: {fileID: 8830354042475737480}
+  - component: {fileID: 3251456549479980410}
   m_Layer: 0
   m_Name: PowerUp
   m_TagString: PowerUp
@@ -138,9 +139,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 7252527258618229641}
   - {fileID: 1719243745722496849}
   - {fileID: 294381787058004327}
-  - {fileID: 7252527258618229641}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1177151275250258588
@@ -204,6 +205,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   height: 0.25
+--- !u!114 &3251456549479980410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055486203663918819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97d2d72c765f64f4dbaaceee3ea9663c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2130162063257827634
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,7 +340,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1719243745722496849
 Transform:
   m_ObjectHideFlags: 0
