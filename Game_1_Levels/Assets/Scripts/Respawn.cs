@@ -14,6 +14,7 @@ public class Respawn : MonoBehaviour
     {   
         player = GameObject.FindWithTag("Player");
         screen = GameObject.Find("RespawnScreen");
+        screen.SetActive(false);
     }
 
     void Update()
