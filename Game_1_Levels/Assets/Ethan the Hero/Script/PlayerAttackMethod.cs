@@ -18,6 +18,9 @@ namespace EthanTheHero
 		public float basicAttack02Power = 0.5f;
 		public float basicAttack03Power = 0.9f;
 
+		[SerializeField] private AudioClip swordSwing1;
+		[SerializeField] private AudioClip swordSwing2;
+
 		private bool atkButtonClickedOnAtk01;
 		private bool atkButtonClickedOnAtk02;
 		private bool atkButtonClickedOnAtk03;
@@ -63,7 +66,10 @@ namespace EthanTheHero
 		{
 			//Combo attack mechanic
 			if (Input.GetMouseButtonDown(0) && !myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack01") && !myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack02") && !myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack03") && playerMv.grounded)
+			{
 				myAnim.SetTrigger(attack01);
+				SoundFXManager.instance.PlaySoundFXClip(swordSwing1, transform, 0.1f);
+			}
 
 			//Set combo attack 01 
 			if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack01"))
@@ -76,6 +82,7 @@ namespace EthanTheHero
 				if (myAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= .8 && atkButtonClickedOnAtk01)
 				{
 					myAnim.SetTrigger(attack02);
+					SoundFXManager.instance.PlaySoundFXClip(swordSwing1, transform, 0.1f);
 					atkButtonClickedOnAtk01 = false;
 
 				}
@@ -95,6 +102,7 @@ namespace EthanTheHero
 				if (myAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= .8 && atkButtonClickedOnAtk02)
 				{
 					myAnim.SetTrigger(attack03);
+					SoundFXManager.instance.PlaySoundFXClip(swordSwing2, transform, 0.1f);
 					atkButtonClickedOnAtk02 = false;
 
 				}
@@ -114,6 +122,7 @@ namespace EthanTheHero
 				if (myAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1 && atkButtonClickedOnAtk03)
 				{
 					myAnim.SetTrigger(attack01);
+					SoundFXManager.instance.PlaySoundFXClip(swordSwing1, transform, 0.1f);
 					atkButtonClickedOnAtk03 = false;
 
 				}
