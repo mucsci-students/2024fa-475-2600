@@ -10,8 +10,6 @@ public class Manager : MonoBehaviour
     public Transform SpawnPoint1;
     public Transform SpawnPoint2;
     public Transform BossSpawnPoint;
-    public Transform LavaSpawn;
-    public Transform PreLavaSpawn;
     private Transform currentSpawnPoint;
     private GameObject player;
     public bool isDie = false;
@@ -48,14 +46,6 @@ public class Manager : MonoBehaviour
         else if (spawnpoint == 3)
         {
             currentSpawnPoint = BossSpawnPoint;
-        }
-        else if (spawnpoint == 4)
-        {
-            currentSpawnPoint = LavaSpawn;
-        }
-        else if (spawnpoint == 5)
-        {
-            currentSpawnPoint = PreLavaSpawn;
         }
     }
     void Update ()
