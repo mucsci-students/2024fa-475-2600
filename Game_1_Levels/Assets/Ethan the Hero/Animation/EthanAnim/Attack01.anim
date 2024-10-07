@@ -82,7 +82,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: swordHitbox
+    path: swordHitbox1
     classID: 60
     script: {fileID: 0}
     flags: 0
@@ -117,7 +117,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1847103567
+      path: 1708239654
       attribute: 3305885265
       script: {fileID: 0}
       typeID: 60
@@ -224,7 +224,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: swordHitbox
+    path: swordHitbox1
     classID: 60
     script: {fileID: 0}
     flags: 0
