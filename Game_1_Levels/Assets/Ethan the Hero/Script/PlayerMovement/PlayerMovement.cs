@@ -37,6 +37,13 @@ namespace EthanTheHero
 		private RaycastHit2D wall;
 		private float jumpTime;
 
+		//Sound Effects
+		private float timer = 0f;
+		[SerializeField] private AudioClip jumpSound;
+		[SerializeField] private AudioClip runSound;
+		[SerializeField] private AudioClip dashSound;
+
+
         #endregion
 
         #region MONOBEHAVIOUR
@@ -103,6 +110,7 @@ namespace EthanTheHero
 			//Calculate Acceleration and Decceleration
 			if (lastOnGroundTime > 0)
 				accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? data.runAccelAmount : data.runDeccelAmount;
+				
 			else
 				accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? data.runAccelAmount * data.accelInAir : data.runDeccelAmount * data.deccelInAir;
 
@@ -114,6 +122,8 @@ namespace EthanTheHero
 
 			//Implementing run
 			myBody.AddForce(movement * Vector2.right, ForceMode2D.Force);
+
+
 		}
 		#endregion
 
@@ -126,6 +136,9 @@ namespace EthanTheHero
 			myBody.gravityScale = 0f;
 
 			myBody.velocity = new Vector2(transform.localScale.x * data.dashPower, 0f);
+
+			SoundFXManager.instance.PlaySoundFXClip(dashSound, transform, 0.1f);
+
 			yield return new WaitForSeconds(data.dashingTime);
 			if (move.x > 0)
 			{
@@ -155,6 +168,7 @@ namespace EthanTheHero
 			{
 				isJumping = true;
 				myBody.velocity = new Vector2(myBody.velocity.x, data.jumpHeight);
+				SoundFXManager.instance.PlaySoundFXClip(jumpSound, transform, 0.25f);
 			}
 		}
 		#endregion
@@ -198,9 +212,32 @@ namespace EthanTheHero
 		{
 			Vector3 tem = transform.localScale;
 			if (!isMovingRight)
+			{
 				tem.x = -1f;
+				if (grounded)
+				{
+					timer += Time.deltaTime;
+					if(timer >= .25f)
+					{
+						SoundFXManager.instance.PlaySoundFXClip(runSound, transform, .3f);
+						timer = 0f;
+					}
+				}
+			}
 			else
+			{
 				tem.x = 1f;
+				if (grounded)
+				{
+					timer += Time.deltaTime;
+					if(timer >= .25f)
+					{
+						SoundFXManager.instance.PlaySoundFXClip(runSound, transform, .3f);
+						timer = 0f;
+					}
+				}
+				
+			}
 			transform.localScale = tem;
 		}
 		#endregion

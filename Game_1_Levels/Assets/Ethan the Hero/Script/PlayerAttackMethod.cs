@@ -18,6 +18,7 @@ namespace EthanTheHero
 		public float basicAttack02Power = 0.5f;
 		public float basicAttack03Power = 0.9f;
 
+		//Sound Effects
 		[SerializeField] private AudioClip swordSwing1;
 		[SerializeField] private AudioClip swordSwing2;
 
@@ -102,7 +103,7 @@ namespace EthanTheHero
 				if (myAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= .8 && atkButtonClickedOnAtk02)
 				{
 					myAnim.SetTrigger(attack03);
-					SoundFXManager.instance.PlaySoundFXClip(swordSwing2, transform, 0.1f);
+					SoundFXManager.instance.PlaySoundFXClip(swordSwing2, transform, 0.2f);
 					atkButtonClickedOnAtk02 = false;
 
 				}
