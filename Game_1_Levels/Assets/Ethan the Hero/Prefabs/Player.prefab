@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 114889116844108038}
   - component: {fileID: 114571951395438124}
   - component: {fileID: 114164791449630524}
+  - component: {fileID: 8910759383736196667}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -276,6 +277,20 @@ MonoBehaviour:
   basicAttack01Power: 0.5
   basicAttack02Power: 0.5
   basicAttack03Power: 1
+--- !u!114 &8910759383736196667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821150211701724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1f921a2497ec1449bdd3b3f23b7bdde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  auraActive: 0
+  player: {fileID: 1821150211701724}
 --- !u!1 &1874519716457622
 GameObject:
   m_ObjectHideFlags: 0

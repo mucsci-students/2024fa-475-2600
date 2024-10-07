@@ -7,7 +7,7 @@ public class aura_control : MonoBehaviour
     private float timer = 0f;
     public bool auraActive = false ;
 
-    public GameObject player;
+    private GameObject player;
     // Start is called before the first frame update
 
     private string[] auraSprites = {"aura_ice_0","aura_lightning_0","aura_fire_0"};
