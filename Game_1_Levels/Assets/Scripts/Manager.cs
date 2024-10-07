@@ -15,11 +15,13 @@ public class Manager : MonoBehaviour
     private Transform currentSpawnPoint;
     private GameObject player;
     public bool isDie = false;
+    public int currentLevel;
 
     void Start ()
     {
         currentSpawnPoint = StartSpawnPoint;
         player = GameObject.FindWithTag("Player");
+        PositionPlayer();
     }
 
     public void PositionPlayer()
