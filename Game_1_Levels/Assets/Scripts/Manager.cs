@@ -53,6 +53,7 @@ public class Manager : MonoBehaviour
 		if (isDie)
 		{
             respawner.Die();
+            
 		}
 	}
 }

@@ -11,6 +11,8 @@ namespace EthanTheHero
         private Animator myAnim;
         private Rigidbody2D myBody;
         private PlayerAttackMethod playerAtt;
+        public bool isHurt = false;
+        public bool isDead = false;
 
         private const string speed = "Speed";
         private const string runIdle = "RunIdlePlayying";
@@ -78,10 +80,11 @@ namespace EthanTheHero
             #region HURT&DEATH
 
             //Set hurt animation 
-            if (Input.GetKeyDown(KeyCode.H))
+            if (Input.GetKeyDown(KeyCode.H) || isHurt)
             {
                 myAnim.SetTrigger(hurt);
                 myBody.velocity = new Vector2(0f, 0f);
+                isHurt = false;
             }
 
             if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("Hurt"))
@@ -91,10 +94,11 @@ namespace EthanTheHero
             }
 
             //Set death animation
-            if (Input.GetKeyDown(KeyCode.X))
+            if (Input.GetKeyDown(KeyCode.X) || isDead)
             {
                 myAnim.SetTrigger(death);
                 myBody.velocity = new Vector2(0f, 0f);
+                isDead = false;
             }
 
             if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("Death"))

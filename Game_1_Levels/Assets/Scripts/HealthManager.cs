@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using EthanTheHero;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,13 +8,20 @@ public class HealthManager : MonoBehaviour
 {
     public Manager script;
     public Image healthBar;
+    public PlayerAnimation animScript;
+     private float timer = 0f;
     public float healthAmount = 100f;
 
     void Update()
     {
         if(healthAmount <= 0)
         {
-            script.isDie = true;
+            timer += Time.deltaTime;
+            if(timer >= 1.35)
+            {
+                timer = 0;
+                script.isDie = true;
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.R))
@@ -31,6 +39,10 @@ public class HealthManager : MonoBehaviour
     {
         healthAmount -= damage;
         healthBar.fillAmount = healthAmount / 100f;
+        if (healthAmount > 0)
+            animScript.isHurt = true;
+        else
+            animScript.isDead = true;
     }
 
     public void heal (float healAmount)
