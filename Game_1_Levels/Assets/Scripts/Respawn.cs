@@ -33,6 +33,8 @@ public class Respawn : MonoBehaviour
         player.transform.Find("aura_ice_0").gameObject.SetActive(false);
         player.transform.Find("aura_lightning_0").gameObject.SetActive(false);
         player.transform.Find("aura_fire_0").gameObject.SetActive(false);
+        aura_control auraControl = player.transform.gameObject.GetComponent<aura_control>();
+        auraControl.auraActive = false;
         screen.SetActive(false);
         script.PositionPlayer();
         Time.timeScale = 1;

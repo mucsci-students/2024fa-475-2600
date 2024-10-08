@@ -28,7 +28,7 @@ public class PowerUpTrigger : MonoBehaviour
             other.transform.Find(auras[2]).gameObject.SetActive(true);
         }
         aura_control auraControl = other.transform.gameObject.GetComponent<aura_control>();
-
+        
         auraControl.auraActive = true;
         
         Destroy(powerUp);
