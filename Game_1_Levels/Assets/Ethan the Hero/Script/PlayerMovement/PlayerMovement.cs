@@ -40,10 +40,12 @@ namespace EthanTheHero
 		//Sound Effects
 		private float timer = 0f;
 		[SerializeField] private AudioClip jumpSound;
-		[SerializeField] private AudioClip runSound;
+		[SerializeField] public AudioClip runSound;
+		[SerializeField] public float runSoundVolume;
 		[SerializeField] private AudioClip dashSound;
 		[SerializeField] private AudioClip wallJumpSound;
-		[SerializeField] private AudioClip wallSlidingSound;
+		[SerializeField] public AudioClip wallSlidingSound;
+		[SerializeField] public float wallSlidingSoundVolume;
 
 
         #endregion
@@ -190,7 +192,7 @@ namespace EthanTheHero
 				timer += Time.deltaTime;
 				if(timer >= 1f)
 				{
-					SoundFXManager.instance.PlaySoundFXClip(wallSlidingSound, transform, .1f);
+					SoundFXManager.instance.PlaySoundFXClip(wallSlidingSound, transform, wallSlidingSoundVolume);
 					timer = 0f;
 				}
 			}
@@ -235,9 +237,9 @@ namespace EthanTheHero
 				if (grounded)
 				{
 					timer += Time.deltaTime;
-					if(timer >= .25f)
+					if(timer >= .35f)
 					{
-						SoundFXManager.instance.PlaySoundFXClip(runSound, transform, .3f);
+						SoundFXManager.instance.PlaySoundFXClip(runSound, transform, runSoundVolume);
 						timer = 0f;
 					}
 				}
@@ -248,9 +250,9 @@ namespace EthanTheHero
 				if (grounded)
 				{
 					timer += Time.deltaTime;
-					if(timer >= .25f)
+					if(timer >= .35f)
 					{
-						SoundFXManager.instance.PlaySoundFXClip(runSound, transform, .3f);
+						SoundFXManager.instance.PlaySoundFXClip(runSound, transform, runSoundVolume);
 						timer = 0f;
 					}
 				}
