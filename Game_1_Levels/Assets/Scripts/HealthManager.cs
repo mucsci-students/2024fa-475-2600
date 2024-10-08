@@ -9,12 +9,19 @@ public class HealthManager : MonoBehaviour
     public Manager script;
     public Image healthBar;
     public PlayerAnimation animScript;
-     private float timer = 0f;
-    public float healthAmount = 100f;
-
+    [SerializeField] private AudioClip deathSound;
+	[SerializeField] public AudioClip hurtSound;
+    [SerializeField] public AudioClip healSound;
+    [SerializeField] public AudioClip regenSound;
+    private float timer = 0f;
+    private float regenTimer = 0f;
+    public float currentHealth = 1f;
+    public float maxHealth = 100f;
+    public float lerpSpeed;
+    
     void Update()
-    {
-        if(healthAmount <= 0)
+    { 
+        if(currentHealth <= 0)
         {
             timer += Time.deltaTime;
             if(timer >= 1.35)
@@ -35,20 +42,43 @@ public class HealthManager : MonoBehaviour
         }
     }
 
+    public void HealthBarFiller ()
+    {
+        healthBar.fillAmount = Mathf.Lerp (healthBar.fillAmount, currentHealth, lerpSpeed);
+        if (healthBar.fillAmount > .997f)
+        {
+            heal(200f);
+        }
+    }
+
     public void takeDamage (float damage)
     {
-        healthAmount -= damage;
-        healthBar.fillAmount = healthAmount / 100f;
-        if (healthAmount > 0)
+        currentHealth -= damage;
+        healthBar.fillAmount = currentHealth / 100f;
+        if (currentHealth > 0)
+        {
+            SoundFXManager.instance.PlaySoundFXClip(hurtSound, transform, 0.1f);
             animScript.isHurt = true;
+        }
+            
         else
+        {
+            SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.2f);
             animScript.isDead = true;
+        }
+            
     }
 
     public void heal (float healAmount)
     {
-        healthAmount += healAmount;
-        healthAmount= Mathf.Clamp(healthAmount, 0, 100);
-        healthBar.fillAmount = healthAmount / 100f;
+        currentHealth += healAmount;
+        currentHealth= Mathf.Clamp(currentHealth, 0, 100);
+        healthBar.fillAmount = currentHealth / 100f;
+        if (healAmount < 50f)
+        {
+            SoundFXManager.instance.PlaySoundFXClip(healSound, transform, 0.2f);
+        }
+        
+
     }
 }

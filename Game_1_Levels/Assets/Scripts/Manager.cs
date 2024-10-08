@@ -14,6 +14,7 @@ public class Manager : MonoBehaviour
     private GameObject player;
     public bool isDie = false;
     public int currentLevel;
+    private float regenTimer = 0f;
 
     void Start ()
     {
@@ -25,7 +26,9 @@ public class Manager : MonoBehaviour
     public void PositionPlayer()
 	{
 		player.transform.position = currentSpawnPoint.transform.position;
-        script.heal(200);
+        SoundFXManager.instance.PlaySoundFXClip(script.regenSound, transform, 0.1f);
+        script.currentHealth = 1;
+        script.healthBar.fillAmount = script.currentHealth / script.maxHealth;
         isDie = false;
 	}
 
@@ -50,9 +53,16 @@ public class Manager : MonoBehaviour
     }
     void Update ()
 	{
+        regenTimer += Time.deltaTime;
+        if (regenTimer < 4)
+        {
+            script.lerpSpeed = 2f * Time.deltaTime;
+            script.HealthBarFiller();
+        }
 		if (isDie)
 		{
             respawner.Die();
+            regenTimer = 0;
             
 		}
 	}
