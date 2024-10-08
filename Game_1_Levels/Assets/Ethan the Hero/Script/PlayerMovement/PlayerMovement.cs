@@ -42,6 +42,8 @@ namespace EthanTheHero
 		[SerializeField] private AudioClip jumpSound;
 		[SerializeField] private AudioClip runSound;
 		[SerializeField] private AudioClip dashSound;
+		[SerializeField] private AudioClip wallJumpSound;
+		[SerializeField] private AudioClip wallSlidingSound;
 
 
         #endregion
@@ -137,7 +139,7 @@ namespace EthanTheHero
 
 			myBody.velocity = new Vector2(transform.localScale.x * data.dashPower, 0f);
 
-			SoundFXManager.instance.PlaySoundFXClip(dashSound, transform, 0.1f);
+			SoundFXManager.instance.PlaySoundFXClip(dashSound, transform, .05f);
 
 			yield return new WaitForSeconds(data.dashingTime);
 			if (move.x > 0)
@@ -184,6 +186,13 @@ namespace EthanTheHero
 			{
 				wallSliding = true;
 				jumpTime = Time.time + data.wallJumpTime;
+
+				timer += Time.deltaTime;
+				if(timer >= 1f)
+				{
+					SoundFXManager.instance.PlaySoundFXClip(wallSlidingSound, transform, .1f);
+					timer = 0f;
+				}
 			}
 			else if (jumpTime < Time.time)
 				wallSliding = false;
@@ -191,17 +200,26 @@ namespace EthanTheHero
 				wallSliding = false;
 
 			if (wallSliding)
+			{
 				myBody.velocity = new Vector2(myBody.velocity.x, Mathf.Clamp(myBody.velocity.y, -data.wallSlideSpeed, float.MaxValue));
+			}
+				
 
 		}
 
 		private IEnumerator wallJumpMechanic()
 		{
 			wallJump = true;
-			if (transform.localScale.x == -1f)
+			if (transform.localScale.x == -1f)		
+			{
 				myBody.velocity = new Vector2(data.wallJumpingXPower, data.wallJumpingYPower);
+				SoundFXManager.instance.PlaySoundFXClip(wallJumpSound, transform, 0.25f);
+			}
 			else
+			{
 				myBody.velocity = new Vector2(-data.wallJumpingXPower, data.wallJumpingYPower);
+				SoundFXManager.instance.PlaySoundFXClip(wallJumpSound, transform, 0.25f);
+			}
 			yield return new WaitForSeconds(data.WallJumpTimeInSecond);
 			wallJump = false;
 		}
