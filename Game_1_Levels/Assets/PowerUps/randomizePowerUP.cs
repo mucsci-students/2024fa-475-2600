@@ -12,7 +12,7 @@ public class randomizePowerUP : MonoBehaviour
 
     void Start(){
         int powerUpId = Random.Range(0,3);
-        powerUp = GameObject.FindWithTag("PowerUp");
+        powerUp = this.gameObject;
         powerUp.transform.Find(powerUpSprites[powerUpId]).gameObject.SetActive(true);
     }
 }

@@ -9,7 +9,7 @@ public class PowerUpTrigger : MonoBehaviour
     private GameObject powerUp;
 
     void Start(){
-        powerUp = GameObject.FindWithTag("PowerUp");
+        powerUp = this.gameObject;
     }
     void OnTriggerEnter2D (Collider2D other)
     {
