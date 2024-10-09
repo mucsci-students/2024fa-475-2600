@@ -13,7 +13,7 @@ public class PowerUpTrigger : MonoBehaviour
     }
     void OnTriggerEnter2D (Collider2D other)
     {
-        if(other.tag == "Player"){
+        if(other.tag == "Player" && !other.transform.gameObject.GetComponent<aura_control>().auraActive){
             //Choose which aura to activate on the player
 
         //ice
