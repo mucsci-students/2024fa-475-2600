@@ -43,20 +43,19 @@ namespace EthanTheHero
 
 		void Update()
 		{
-			if (playerMv.isDashing || playerMv.wallJump || playerMv.wallSliding)
+			if (Time.timeScale == 0 || playerMv.isDashing || playerMv.wallJump || playerMv.wallSliding)
+			{
 				return;
-
-
+			}
 			BasicAttackCombo();
-
-
 		}
 
 		void FixedUpdate()
 		{
-			if (playerMv.isDashing || playerMv.wallJump || playerMv.wallSliding)
+			if (Time.timeScale == 0 || playerMv.isDashing || playerMv.wallJump || playerMv.wallSliding)
+			{
 				return;
-
+			}
 			BasicAttackMethod();
 
 		}

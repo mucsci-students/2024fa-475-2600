@@ -27,7 +27,7 @@ public class aura_control : MonoBehaviour
     void Update()
     {
         int index = -1;
-        if(auraActive){
+        if(Time.timeScale != 0 && auraActive){
             
             for(int i = 0 ; i < auras.Count;i++){
                 if(auras[i]!= null && auras[i].activeInHierarchy){

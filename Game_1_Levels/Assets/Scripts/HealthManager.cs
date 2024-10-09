@@ -21,6 +21,11 @@ public class HealthManager : MonoBehaviour
     
     void Update()
     { 
+        //if game paused don't do anything
+        if(Time.timeScale == 0){
+            return;
+        }
+
         if(currentHealth <= 0)
         {
             timer += Time.deltaTime;
@@ -30,7 +35,7 @@ public class HealthManager : MonoBehaviour
                 script.isDie = true;
             }
         }
-
+        
         if (Input.GetKeyDown(KeyCode.R))
         {
             takeDamage(20);

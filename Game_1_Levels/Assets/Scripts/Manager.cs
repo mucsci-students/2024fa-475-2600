@@ -53,6 +53,9 @@ public class Manager : MonoBehaviour
     }
     void Update ()
 	{
+        if(Time.timeScale == 0){
+            return;
+        }
         regenTimer += Time.deltaTime;
         if (regenTimer < 4)
         {
