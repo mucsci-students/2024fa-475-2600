@@ -57,7 +57,7 @@ public class Manager : MonoBehaviour
             return;
         }
         regenTimer += Time.deltaTime;
-        if (regenTimer < 4)
+        if (regenTimer < 3f)
         {
             script.lerpSpeed = 2f * Time.deltaTime;
             script.HealthBarFiller();
