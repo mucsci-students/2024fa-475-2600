@@ -179,6 +179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 2055486203663918819, guid: 5dcbfd189d4775d4ba5159331902572a, type: 3}
   spawnPoint: {fileID: 3691028582517280456}
+  chestOpen: {fileID: 8300000, guid: 0544e1095b2ecc14a84d1d3bcedf249c, type: 3}
 --- !u!95 &1935513086901061920
 Animator:
   serializedVersion: 5
