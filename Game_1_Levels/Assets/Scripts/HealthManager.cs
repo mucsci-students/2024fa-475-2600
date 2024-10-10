@@ -26,7 +26,7 @@ public class HealthManager : MonoBehaviour
             return;
         }
         regenTimer += Time.deltaTime;
-        if (regenTimer < 4)
+        if (regenTimer < 3)
         {
             lerpSpeed = 2f * Time.deltaTime;
             float newFill = Mathf.Lerp (healthBar.fillAmount, currentHealth, lerpSpeed);

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class aura_control : MonoBehaviour
 {
-    private float timer = 0f;
+    public float timer = 0f;
     public bool auraActive = false ;
 
     private GameObject player;
