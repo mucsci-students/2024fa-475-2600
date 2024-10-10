@@ -25,6 +25,14 @@ public class HealthManager : MonoBehaviour
         if(Time.timeScale == 0){
             return;
         }
+        regenTimer += Time.deltaTime;
+        if (regenTimer < 3)
+        {
+            lerpSpeed = 2f * Time.deltaTime;
+            float newFill = Mathf.Lerp (healthBar.fillAmount, currentHealth, lerpSpeed);
+            heal(newFill - healthBar.fillAmount);
+            
+        }
 
         if(currentHealth <= 0)
         {
@@ -32,8 +40,10 @@ public class HealthManager : MonoBehaviour
             if(timer >= 1.35)
             {
                 timer = 0;
+                regenTimer = 0;
                 script.isDie = true;
             }
+            return;
         }
         
         if (Input.GetKeyDown(KeyCode.R))
@@ -44,15 +54,6 @@ public class HealthManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             heal(20);
-        }
-    }
-
-    public void HealthBarFiller ()
-    {
-        healthBar.fillAmount = Mathf.Lerp (healthBar.fillAmount, currentHealth, lerpSpeed);
-        if (healthBar.fillAmount > .997f)
-        {
-            heal(200f);
         }
     }
 
@@ -79,7 +80,7 @@ public class HealthManager : MonoBehaviour
         currentHealth += healAmount;
         currentHealth= Mathf.Clamp(currentHealth, 0, 100);
         healthBar.fillAmount = currentHealth / 100f;
-        if (healAmount < 50f)
+        if (healAmount > 10f && healAmount < 50f)
         {
             SoundFXManager.instance.PlaySoundFXClip(healSound, transform, 0.2f);
         }

@@ -14,10 +14,10 @@ public class Manager : MonoBehaviour
     private GameObject player;
     public bool isDie = false;
     public int currentLevel;
-    private float regenTimer = 0f;
 
     void Start ()
     {
+        Time.timeScale = 1;
         currentSpawnPoint = StartSpawnPoint;
         player = GameObject.FindWithTag("Player");
         PositionPlayer();
@@ -56,17 +56,9 @@ public class Manager : MonoBehaviour
         if(Time.timeScale == 0){
             return;
         }
-        regenTimer += Time.deltaTime;
-        if (regenTimer < 3f)
-        {
-            script.lerpSpeed = 2f * Time.deltaTime;
-            script.HealthBarFiller();
-        }
 		if (isDie)
 		{
             respawner.Die();
-            regenTimer = 0;
-            
 		}
 	}
 }

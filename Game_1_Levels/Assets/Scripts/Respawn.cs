@@ -36,8 +36,9 @@ public class Respawn : MonoBehaviour
         //aura_control auraControl = player.transform.gameObject.GetComponent<aura_control>();
         //auraControl.auraActive = false;
         screen.SetActive(false);
-        script.PositionPlayer();
         Time.timeScale = 1;
+        script.PositionPlayer();
+
     }
     public void ExitToMenu()
     {
