@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 namespace EthanTheHero
@@ -46,6 +47,7 @@ namespace EthanTheHero
 		[SerializeField] private AudioClip wallJumpSound;
 		[SerializeField] public AudioClip wallSlidingSound;
 		[SerializeField] public float wallSlidingSoundVolume;
+		public HealthManager script;
 
 
         #endregion
@@ -128,6 +130,8 @@ namespace EthanTheHero
 			//Implementing run
 			myBody.AddForce(movement * Vector2.right, ForceMode2D.Force);
 
+			script.isWallSliding = false;
+
 
 		}
 		#endregion
@@ -190,6 +194,8 @@ namespace EthanTheHero
 				wallSliding = true;
 				jumpTime = Time.time + data.wallJumpTime;
 
+				script.isWallSliding = true;
+
 				timer += Time.deltaTime;
 				if(timer >= 1f)
 				{
@@ -206,7 +212,6 @@ namespace EthanTheHero
 			{
 				myBody.velocity = new Vector2(myBody.velocity.x, Mathf.Clamp(myBody.velocity.y, -data.wallSlideSpeed, float.MaxValue));
 			}
-				
 
 		}
 

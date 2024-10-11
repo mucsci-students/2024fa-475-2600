@@ -80,7 +80,7 @@ namespace EthanTheHero
             #region HURT&DEATH
 
             //Set hurt animation 
-            if (Input.GetKeyDown(KeyCode.H) || isHurt)
+            if (isHurt)
             {
                 myAnim.SetTrigger(hurt);
                 myBody.velocity = new Vector2(0f, 0f);
@@ -94,7 +94,7 @@ namespace EthanTheHero
             }
 
             //Set death animation
-            if (Input.GetKeyDown(KeyCode.X) || isDead)
+            if (isDead)
             {
                 myAnim.SetTrigger(death);
                 myBody.velocity = new Vector2(0f, 0f);

@@ -18,6 +18,7 @@ public class HealthManager : MonoBehaviour
     public float currentHealth = 1f;
     public float maxHealth = 100f;
     public float lerpSpeed;
+    public bool isWallSliding = false;
     
     void Update()
     { 
@@ -64,7 +65,10 @@ public class HealthManager : MonoBehaviour
         if (currentHealth > 0)
         {
             SoundFXManager.instance.PlaySoundFXClip(hurtSound, transform, 0.1f);
-            animScript.isHurt = true;
+            if (isWallSliding == false)
+            {
+                animScript.isHurt = true;
+            }
         }
             
         else
