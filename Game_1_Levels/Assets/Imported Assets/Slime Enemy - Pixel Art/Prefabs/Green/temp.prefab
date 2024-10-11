@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8068589428734277746}
   - component: {fileID: 8068589428734277747}
   m_Layer: 0
-  m_Name: Green Idle
+  m_Name: temp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

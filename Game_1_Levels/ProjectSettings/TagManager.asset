@@ -11,6 +11,7 @@ TagManager:
   - PowerUp
   - Sword
   - movingPlatform
+  - Enemy
   layers:
   - Default
   - TransparentFX
