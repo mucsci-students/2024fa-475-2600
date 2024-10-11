@@ -29,22 +29,28 @@ public class SlopeEnabler : MonoBehaviour
 
     void OnTriggerStay2D (Collider2D other)
     {
-        (player.GetComponent(script) as MonoBehaviour).enabled = true;
-        print("Script is enabled");
+        if(other.tag=="Player")
+        {
+            (player.GetComponent(script) as MonoBehaviour).enabled = true;
+            print("Script is enabled");
+        }
     }
 
     private void OnTriggerExit2D (Collider2D other)
     {
-        (player.GetComponent(script) as MonoBehaviour).enabled = false;
-        print("Script is disabled");
+        if(other.tag=="Player")
+        {
+            (player.GetComponent(script) as MonoBehaviour).enabled = false;
+            print("Script is disabled");
+        }
     }
 
-    IEnumerator DisableCollider () 
-   {
+    IEnumerator DisableCollider() 
+    {
         yield return new WaitForSeconds (1f);
         foreach(EdgeCollider2D c in GetComponents<EdgeCollider2D>()) 
         {
             c.enabled = true;
         }
-   }
+    }
 }
