@@ -10,19 +10,28 @@ public class PlatformDisabler : MonoBehaviour
 
     void Start()
     {
-        platforms = GetComponent<TilemapCollider2D>();
+        //platforms = GetComponent<TilemapCollider2D>();
+        //platforms = GetComponent<TilemapCollider2D>();
     }
     void Update ()
     {
         if (Input.GetKeyDown(KeyCode.S))
         {
-            platforms.enabled = false;
+            //platforms.enabled = false;
+            foreach(BoxCollider2D c in GetComponents<BoxCollider2D>()) 
+            {
+                c.enabled = false;
+            }
             StartCoroutine(DisableCollider());
         }
     }
    IEnumerator DisableCollider () 
    {
         yield return new WaitForSeconds (waitTime);
-        platforms.enabled = true;
+        foreach(BoxCollider2D c in GetComponents<BoxCollider2D>()) 
+        {
+            c.enabled = true;
+        }
+        //platforms.enabled = true;
    }
 }
