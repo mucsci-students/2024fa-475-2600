@@ -10,6 +10,7 @@ TagManager:
   - cannonBall
   - PowerUp
   - Sword
+  - movingPlatform
   layers:
   - Default
   - TransparentFX
