@@ -42,6 +42,10 @@ namespace EthanTheHero
 
         void Update()
         {
+            if(Time.timeScale == 0)
+            {
+                return;
+            }
             #region IDLE & RUN
 
             myAnim.SetFloat(speed, Mathf.Abs(playerMv.move.x));
