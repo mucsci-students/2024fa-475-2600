@@ -22,7 +22,7 @@ namespace EthanTheHero
 
         private aura_control auraControl;
 
-        private bool onCoolDown;
+        public bool onCoolDown;
 
         void Awake()
         {
@@ -55,7 +55,7 @@ namespace EthanTheHero
                     }
                 }
                 if(onCoolDown){
-                    if(timer >= 2.8f){
+                    if( timer >= .8f && index != 2||timer >= 2.5f ){
                         onCoolDown = false;
                         timer = 0f;
                     }else{
@@ -67,11 +67,11 @@ namespace EthanTheHero
                     float direction = Mathf.Sign(player.transform.localScale.x);
                     
                     if(index == 0){
-                        Destroy(Instantiate(ice_prefab,new Vector3(player.transform.position.x + (ice_prefab.transform.position.x * direction),player.transform.position.y + ice_prefab.transform.position.y,player.transform.position.z),ice_prefab.transform.rotation),3f);
+                        Destroy(Instantiate(ice_prefab,new Vector3(player.transform.position.x + (ice_prefab.transform.position.x * direction),player.transform.position.y + ice_prefab.transform.position.y,player.transform.position.z),ice_prefab.transform.rotation),.5f);
                     }else if(index == 1){
-                        Destroy(Instantiate(lightning_prefab,new Vector3(player.transform.position.x + (lightning_prefab.transform.position.x * direction) ,player.transform.position.y + lightning_prefab.transform.position.y,player.transform.position.z),lightning_prefab.transform.rotation),3f);
+                        Destroy(Instantiate(lightning_prefab,new Vector3(player.transform.position.x + (lightning_prefab.transform.position.x * direction) ,player.transform.position.y + lightning_prefab.transform.position.y,player.transform.position.z),lightning_prefab.transform.rotation),.8f);
                     }else{
-                        Destroy(Instantiate(fire_prefab,new Vector3(player.transform.position.x + (fire_prefab.transform.position.x * direction),player.transform.position.y + fire_prefab.transform.position.y,player.transform.position.z),fire_prefab.transform.rotation),3f);
+                        Destroy(Instantiate(fire_prefab,new Vector3(player.transform.position.x + (fire_prefab.transform.position.x * direction),player.transform.position.y + fire_prefab.transform.position.y,player.transform.position.z),fire_prefab.transform.rotation),2.5f);
                     }
                     onCoolDown = true;
                 }

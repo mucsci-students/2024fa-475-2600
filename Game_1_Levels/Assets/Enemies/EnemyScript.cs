@@ -17,10 +17,10 @@ public class EnemyMovement : MonoBehaviour
     public GameObject pointB;
     //internal variables
     public float speed = 1;
-    public bool paused = false;
 
     void Start()
     {
+
         anim = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
         targetPoint = pointB.transform;
@@ -30,7 +30,7 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Time.timeScale == 0 || paused)
+        if(Time.timeScale == 0 || !anim.GetBool("isRunning"))
         {
             return;
         }
@@ -47,8 +47,7 @@ public class EnemyMovement : MonoBehaviour
             flip();
             anim.SetBool("isRunning", false);
             StartCoroutine(goIdle());
-            anim.SetBool("isRunning", true);
-            if(targetPoint == pointB)
+            if(targetPoint == pointB.transform)
             {
                 targetPoint = pointA.transform;
             }
@@ -68,9 +67,8 @@ public class EnemyMovement : MonoBehaviour
 
     IEnumerator goIdle() 
     {
-        paused = true;
         yield return new WaitForSeconds (2f);
-        paused = false;
+        anim.SetBool("isRunning", true);
     }
     
     void OnTriggerEnter2D(Collider2D other)
@@ -78,11 +76,13 @@ public class EnemyMovement : MonoBehaviour
         if (other.tag == "Sword")
         {
             health -=10;
-            if(health <=0 ){
+            if(health <=0 )
+            {
                 anim.SetTrigger("death");
                 Destroy(transform.parent.gameObject, 0.5f);
             }
-            else{
+            else
+            {
                 anim.SetTrigger("hurt");
             } 
         }
