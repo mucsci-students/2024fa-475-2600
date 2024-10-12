@@ -36,7 +36,7 @@ public class aura_control : MonoBehaviour
             }
 
             timer += Time.deltaTime;
-            if(timer >= 5f && index != -1){
+            if(timer >= 30f && index != -1){
                 if(auras[index]!=null){
                     player.transform.Find(auraSprites[index]).gameObject.SetActive(false);
                 }
