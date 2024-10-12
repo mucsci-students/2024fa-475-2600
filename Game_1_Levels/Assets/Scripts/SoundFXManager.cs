@@ -10,12 +10,15 @@ public class SoundFXManager : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null)
+        instance = this;
+    }
+    void Update()
+    {
+        if(instance != this)
         {
             instance = this;
         }
     }
-
     public void PlaySoundFXClip(AudioClip audioClip, Transform spawnTransform, float volume)
     {
         //spawn in gameObject

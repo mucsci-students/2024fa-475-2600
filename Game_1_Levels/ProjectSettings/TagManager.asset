@@ -12,6 +12,7 @@ TagManager:
   - Sword
   - movingPlatform
   - Enemy
+  - HealthManager
   layers:
   - Default
   - TransparentFX
