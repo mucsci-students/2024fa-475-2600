@@ -18,13 +18,13 @@ public class no_S_SlopeEnabler : MonoBehaviour
     void OnTriggerStay2D (Collider2D other)
     {
         (player.GetComponent(script) as MonoBehaviour).enabled = true;
-        print("Script is enabled");
+        //print("Script is enabled");
     }
 
     private void OnTriggerExit2D (Collider2D other)
     {
         (player.GetComponent(script) as MonoBehaviour).enabled = false;
-        print("Script is disabled");
+        //print("Script is disabled");
     }
 }
 

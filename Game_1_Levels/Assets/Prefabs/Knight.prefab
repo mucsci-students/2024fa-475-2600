@@ -1,5 +1,96 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4907961047592651240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3868010443743010498}
+  - component: {fileID: 7226284492759563688}
+  - component: {fileID: 1247714118890440088}
+  m_Layer: 0
+  m_Name: attackHitbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3868010443743010498
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4907961047592651240}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.49136126, y: 1.8375835, z: 0.060776096}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2508788030486337058}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &7226284492759563688
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4907961047592651240}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.1782766, y: -1.8499217}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.63249457, y: 0.9708166}
+  m_EdgeRadius: 0
+--- !u!114 &1247714118890440088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4907961047592651240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01155b035f7a34ff494751c5e76345f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  script: {fileID: 4001730398255450152}
 --- !u!1 &5356050548385290823
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,6 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5827972058675445228}
   - component: {fileID: 8135301925927489798}
+  - component: {fileID: 690572015201927402}
   m_Layer: 0
   m_Name: swordHitbox2
   m_TagString: Untagged
@@ -149,6 +241,20 @@ PolygonCollider2D:
       - {x: -4.7763767, y: -2.1580975}
       - {x: -4.7562904, y: -2.159985}
   m_UseDelaunayMesh: 0
+--- !u!114 &690572015201927402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5356050548385290823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2480aea909d9b249a4e61a9ca3b98fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  script: {fileID: 0}
+  damage: 0
 --- !u!1 &6519743894506030394
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,6 +265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 595776111142988686}
   - component: {fileID: 7126286926243759424}
+  - component: {fileID: 7017878254747133325}
   m_Layer: 0
   m_Name: swordHitbox1
   m_TagString: Untagged
@@ -188,7 +295,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6519743894506030394}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -275,12 +382,9 @@ PolygonCollider2D:
       - {x: -5.173338, y: -2.4095988}
       - {x: -5.1747055, y: -2.4415126}
       - {x: -5.271885, y: -2.4437008}
-      - {x: -5.272007, y: -2.47607}
-      - {x: -5.4044857, y: -2.4465916}
-      - {x: -5.49477, y: -2.377706}
-      - {x: -5.588238, y: -2.3794641}
-      - {x: -5.585563, y: -2.4397666}
-      - {x: -5.40361, y: -2.533067}
+      - {x: -5.276071, y: -2.4821658}
+      - {x: -5.3983903, y: -2.4811327}
+      - {x: -5.4013047, y: -2.5219665}
       - {x: -5.1214175, y: -2.5327349}
       - {x: -5.1179028, y: -2.5011246}
       - {x: -5.0316467, y: -2.500332}
@@ -301,6 +405,20 @@ PolygonCollider2D:
       - {x: -4.7763767, y: -2.1580975}
       - {x: -4.7562904, y: -2.159985}
   m_UseDelaunayMesh: 0
+--- !u!114 &7017878254747133325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6519743894506030394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2480aea909d9b249a4e61a9ca3b98fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  script: {fileID: 0}
+  damage: 0
 --- !u!1 &9029141876265505944
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,6 +433,7 @@ GameObject:
   - component: {fileID: 2057687224266716714}
   - component: {fileID: 1421011905311657926}
   - component: {fileID: 4001730398255450152}
+  - component: {fileID: 2540483898827360367}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Untagged
@@ -337,6 +456,7 @@ Transform:
   m_Children:
   - {fileID: 595776111142988686}
   - {fileID: 5827972058675445228}
+  - {fileID: 3868010443743010498}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &9158429691934310439
@@ -444,7 +564,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.123057365, y: -0.018351793}
+  m_Offset: {x: -0.123057365, y: -0.017151594}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -455,7 +575,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.35090828, y: 0.97077894}
+  m_Size: {x: 0.35090828, y: 0.96837854}
   m_EdgeRadius: 0
 --- !u!50 &1421011905311657926
 Rigidbody2D:
@@ -469,7 +589,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -498,4 +618,55 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 0}
   pointB: {fileID: 0}
+  anim: {fileID: 0}
   speed: 0.75
+  isAttack: 0
+  Health: 100
+  attackSound: {fileID: 8300000, guid: 2583c4fede125c84ea2c793559e1ded2, type: 3}
+  hurtSound: {fileID: 8300000, guid: 5f9976e63233a421bbe9f6439b960e2b, type: 3}
+  deathSound: {fileID: 8300000, guid: 05dfd79af881d4c24821abcecdbc4d03, type: 3}
+--- !u!61 &2540483898827360367
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9029141876265505944}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.1273997, y: -0.020071983}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32818583, y: 0.9493561}
+  m_EdgeRadius: 0

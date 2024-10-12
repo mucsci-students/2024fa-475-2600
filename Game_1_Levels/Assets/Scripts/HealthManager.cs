@@ -88,7 +88,5 @@ public class HealthManager : MonoBehaviour
         {
             SoundFXManager.instance.PlaySoundFXClip(healSound, transform, 0.2f);
         }
-        
-
     }
 }

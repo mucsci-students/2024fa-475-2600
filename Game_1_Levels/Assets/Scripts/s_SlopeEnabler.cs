@@ -32,7 +32,7 @@ public class SlopeEnabler : MonoBehaviour
         if(other.tag=="Player")
         {
             (player.GetComponent(script) as MonoBehaviour).enabled = true;
-            print("Script is enabled");
+            //print("Script is enabled");
         }
     }
 
@@ -41,7 +41,7 @@ public class SlopeEnabler : MonoBehaviour
         if(other.tag=="Player")
         {
             (player.GetComponent(script) as MonoBehaviour).enabled = false;
-            print("Script is disabled");
+            //print("Script is disabled");
         }
     }
 
