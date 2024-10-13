@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class EnemyDamage : MonoBehaviour
 {
-    public HealthManager script;
-    public int damage;
+    private HealthManager script;
+    public int damage = 10;
+
+    void Start()
+    {
+        script = GameObject.FindObjectOfType<HealthManager>();
+    }
 
     void OnTriggerEnter2D (Collider2D other)
     {
