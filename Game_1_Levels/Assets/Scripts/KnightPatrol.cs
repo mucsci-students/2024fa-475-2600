@@ -18,6 +18,7 @@ public class KnightPatrol : MonoBehaviour
 	[SerializeField] private AudioClip hurtSound;
     [SerializeField] private AudioClip deathSound;
     private SpriteRenderer rend;
+    public GameObject heartPrefab;
     // private Vector3 localScale;
 
     void Start()
@@ -118,6 +119,16 @@ public class KnightPatrol : MonoBehaviour
         }
     }
 
+    void randomHeart()
+    {
+        int random = Random.Range(0, 10); // 0 - 9
+        Transform temp = this.transform;
+        if (random < 2)
+        {
+            Instantiate(heartPrefab, temp.position, Quaternion.identity);
+        }
+    }
+
     IEnumerator attack()
     {
         healthCheck();
@@ -135,6 +146,7 @@ public class KnightPatrol : MonoBehaviour
         yield return new WaitForSeconds (2f);
         SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.1f);
         Destroy(this.gameObject);
+        randomHeart();
     }
 
     IEnumerator takeDamage()
