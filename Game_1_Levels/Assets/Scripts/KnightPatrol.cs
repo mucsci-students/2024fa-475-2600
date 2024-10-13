@@ -17,6 +17,7 @@ public class KnightPatrol : MonoBehaviour
     [SerializeField] private AudioClip attackSound;
 	[SerializeField] private AudioClip hurtSound;
     [SerializeField] private AudioClip deathSound;
+    private SpriteRenderer rend;
     // private Vector3 localScale;
 
     void Start()
@@ -26,6 +27,7 @@ public class KnightPatrol : MonoBehaviour
         currentPoint = pointB.transform;
         anim.SetBool("isRunning", true);
         myTargetValid = true;
+        rend = this.gameObject.GetComponent<SpriteRenderer>();
         // localScale = transform.localScale;
     }
 
@@ -110,7 +112,8 @@ public class KnightPatrol : MonoBehaviour
         if (other.tag == "Sword")
         {
             Debug.Log("Health is " + Health);
-            SoundFXManager.instance.PlaySoundFXClip(hurtSound, transform, 1f);
+            SoundFXManager.instance.PlaySoundFXClip(hurtSound, transform, .25f);
+            StartCoroutine(takeDamage());
             Health -= 5f;
         }
     }
@@ -129,9 +132,20 @@ public class KnightPatrol : MonoBehaviour
     IEnumerator death()
     {
         anim.SetBool("isDead", true);
-        SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.2f);
         yield return new WaitForSeconds (2f);
+        SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.1f);
         Destroy(this.gameObject);
+    }
+
+    IEnumerator takeDamage()
+    {
+        rend.enabled = false;
+        yield return new WaitForSeconds (.1f);
+        rend.enabled = true;
+        yield return new WaitForSeconds (.1f);
+        rend.enabled = false;
+        yield return new WaitForSeconds (.1f);
+        rend.enabled = true;
     }
 
     // IEnumerator goIdle(int point) 
