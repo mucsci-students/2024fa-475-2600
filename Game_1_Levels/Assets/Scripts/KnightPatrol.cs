@@ -19,6 +19,8 @@ public class KnightPatrol : MonoBehaviour
     [SerializeField] private AudioClip deathSound;
     private SpriteRenderer rend;
     public GameObject heartPrefab;
+    public bool isDead = false;
+    public float playerSwordDamage;
     // private Vector3 localScale;
 
     void Start()
@@ -91,6 +93,7 @@ public class KnightPatrol : MonoBehaviour
         {
             anim.SetBool("isRunning", false);
             myTargetValid = false;
+            isDead = true;
             StartCoroutine(death());
         }
     }
@@ -110,12 +113,12 @@ public class KnightPatrol : MonoBehaviour
 
     void OnTriggerEnter2D (Collider2D other)
     {
-        if (other.tag == "Sword")
+        if (other.tag == "Sword" && isDead == false)
         {
             Debug.Log("Health is " + Health);
             SoundFXManager.instance.PlaySoundFXClip(hurtSound, transform, .25f);
             StartCoroutine(takeDamage());
-            Health -= 5f;
+            Health -= playerSwordDamage;
         }
     }
 
@@ -123,7 +126,8 @@ public class KnightPatrol : MonoBehaviour
     {
         int random = Random.Range(0, 10); // 0 - 9
         Transform temp = this.transform;
-        if (random < 2)
+        Debug.Log("random is " + random);
+        if (random < 3)
         {
             Instantiate(heartPrefab, temp.position, Quaternion.identity);
         }
