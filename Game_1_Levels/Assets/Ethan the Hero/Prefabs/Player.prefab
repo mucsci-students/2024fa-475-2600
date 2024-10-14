@@ -328,6 +328,9 @@ MonoBehaviour:
   ice_prefab: {fileID: 562216667196892526, guid: 75d2757689558744ca2842c43dcf7c17, type: 3}
   lightning_prefab: {fileID: 4860154911048929475, guid: 624268b3a0656a2408cf57c199084816, type: 3}
   fire_prefab: {fileID: 7710875126682590294, guid: d8a5d9e36fb0a004aae497c18aa5c6bb, type: 3}
+  fireSound: {fileID: 8300000, guid: 2735c5dc6c4f54b80a9ece76ab510b9a, type: 3}
+  lightningSound: {fileID: 8300000, guid: f1cb5d83282f2904a85f73111d068616, type: 3}
+  iceSound: {fileID: 8300000, guid: 1d74880bed4586644a16a79a2d9dc8af, type: 3}
   onCoolDown: 0
 --- !u!81 &8471478606022627834
 AudioListener:
@@ -1444,11 +1447,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 624268b3a0656a2408cf57c199084816, type: 3}
---- !u!1 &5726036291192618988 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4860154911048929475, guid: 624268b3a0656a2408cf57c199084816, type: 3}
-  m_PrefabInstance: {fileID: 865899008314765103}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6034067372028460810 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6897573722227544101, guid: 624268b3a0656a2408cf57c199084816, type: 3}
@@ -1535,11 +1533,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a5d9e36fb0a004aae497c18aa5c6bb, type: 3}
---- !u!1 &5870591113630096432 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7710875126682590294, guid: d8a5d9e36fb0a004aae497c18aa5c6bb, type: 3}
-  m_PrefabInstance: {fileID: 4213697518886912102}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8557683612535687650 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5528432935640500612, guid: d8a5d9e36fb0a004aae497c18aa5c6bb, type: 3}
@@ -1625,10 +1618,5 @@ PrefabInstance:
 --- !u!4 &7270089849449782079 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1923538403251774611, guid: 75d2757689558744ca2842c43dcf7c17, type: 3}
-  m_PrefabInstance: {fileID: 9103265576712961964}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8761804597126191810 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 562216667196892526, guid: 75d2757689558744ca2842c43dcf7c17, type: 3}
   m_PrefabInstance: {fileID: 9103265576712961964}
   m_PrefabAsset: {fileID: 0}

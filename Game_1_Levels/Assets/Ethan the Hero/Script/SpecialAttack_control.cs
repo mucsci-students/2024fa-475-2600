@@ -12,6 +12,10 @@ namespace EthanTheHero
         public GameObject lightning_prefab;
         public GameObject fire_prefab;
 
+        [SerializeField] private AudioClip fireSound;
+        [SerializeField] private AudioClip lightningSound;
+        [SerializeField] private AudioClip iceSound;
+
         private GameObject player;
 
         private PlayerMovement playerMv;
@@ -67,10 +71,13 @@ namespace EthanTheHero
                     float direction = Mathf.Sign(player.transform.localScale.x);
                     
                     if(index == 0){
+                        SoundFXManager.instance.PlaySoundFXClip(iceSound, transform, .3f);
                         Destroy(Instantiate(ice_prefab,new Vector3(player.transform.position.x + (ice_prefab.transform.position.x * direction),player.transform.position.y + ice_prefab.transform.position.y,player.transform.position.z),ice_prefab.transform.rotation),.5f);
                     }else if(index == 1){
+                        SoundFXManager.instance.PlaySoundFXClip(lightningSound, transform, .3f);
                         Destroy(Instantiate(lightning_prefab,new Vector3(player.transform.position.x + (lightning_prefab.transform.position.x * direction) ,player.transform.position.y + lightning_prefab.transform.position.y,player.transform.position.z),lightning_prefab.transform.rotation),.8f);
                     }else{
+                        SoundFXManager.instance.PlaySoundFXClip(fireSound, transform, .2f);
                         Destroy(Instantiate(fire_prefab,new Vector3(player.transform.position.x + (fire_prefab.transform.position.x * direction),player.transform.position.y + fire_prefab.transform.position.y,player.transform.position.z),fire_prefab.transform.rotation),2.5f);
                     }
                     onCoolDown = true;

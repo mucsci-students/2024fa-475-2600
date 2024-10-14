@@ -12,6 +12,7 @@ public class SwapCaveSounds : MonoBehaviour
     [SerializeField] private AudioClip newRunSound;
     [SerializeField] private AudioClip prevWallSlidingSound;
     [SerializeField] private AudioClip newWallSlidingSound;
+    
     void OnTriggerEnter2D ()
     {
         script.runSound = newRunSound;
