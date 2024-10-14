@@ -9,19 +9,12 @@ public class Respawn : MonoBehaviour
     private GameObject screen;
     public Manager script;
     
-
     void Start() 
     {   
         player = GameObject.FindWithTag("Player");
         screen = GameObject.Find("RespawnScreen");
         screen.SetActive(false);
     }
-
-    void Update()
-    {
-        
-    }
-
     public void Die()
     {
         Time.timeScale = 0;
@@ -33,17 +26,13 @@ public class Respawn : MonoBehaviour
         player.transform.Find("aura_lightning_0").gameObject.SetActive(false);
         player.transform.Find("aura_fire_0").gameObject.SetActive(false);
         player.transform.gameObject.GetComponent<aura_control>().auraActive = false;
-        //aura_control auraControl = player.transform.gameObject.GetComponent<aura_control>();
-        //auraControl.auraActive = false;
         screen.SetActive(false);
         Time.timeScale = 1;
         script.PositionPlayer();
-
     }
     public void ExitToMenu()
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
-    
 }
