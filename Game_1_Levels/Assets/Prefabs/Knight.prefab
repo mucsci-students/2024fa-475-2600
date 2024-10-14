@@ -624,6 +624,8 @@ MonoBehaviour:
   hurtSound: {fileID: 8300000, guid: 5f9976e63233a421bbe9f6439b960e2b, type: 3}
   deathSound: {fileID: 8300000, guid: 05dfd79af881d4c24821abcecdbc4d03, type: 3}
   heartPrefab: {fileID: 7669446628929368331, guid: a3791880e5a044931acdcccdf0d83fe8, type: 3}
+  isDead: 0
+  playerSwordDamage: 5
 --- !u!61 &2540483898827360367
 BoxCollider2D:
   m_ObjectHideFlags: 0
