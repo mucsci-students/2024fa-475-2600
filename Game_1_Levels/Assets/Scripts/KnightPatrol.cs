@@ -82,6 +82,7 @@ public class KnightPatrol : MonoBehaviour
         {
             myTargetValid = false;
             anim.SetBool("isRunning", false);
+            anim.SetTrigger("attack");
             StartCoroutine(attack());
         }
         healthCheck();
@@ -136,7 +137,6 @@ public class KnightPatrol : MonoBehaviour
     IEnumerator attack()
     {
         healthCheck();
-        anim.SetTrigger("attack");
         isAttack = false;
         yield return new WaitForSeconds (1f);
         SoundFXManager.instance.PlaySoundFXClip(attackSound, transform, 2f);

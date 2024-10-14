@@ -7,6 +7,7 @@ public class EnemyAttackHB : MonoBehaviour
     public KnightPatrol script;
     private float timer = 0f;
 
+
     void OnTriggerEnter2D (Collider2D other)
     { 
         if (other.tag == "Player")

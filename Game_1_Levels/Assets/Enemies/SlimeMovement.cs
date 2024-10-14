@@ -50,7 +50,7 @@ public class SlimeMovement : MonoBehaviour
         
         if (Mathf.Abs(transform.position.x - targetPoint.position.x) < 0.5f)
         {
-            Debug.Log("I should flip now");
+            //Debug.Log("I should flip now");
             flip();
             anim.SetBool("isRunning", false);
             StartCoroutine(goIdle());
@@ -104,7 +104,7 @@ public class SlimeMovement : MonoBehaviour
             else
             {
                 anim.SetTrigger("hurt");
-                SoundFXManager.instance.PlaySoundFXClip(hurtSound, transform, .25f);
+                SoundFXManager.instance.PlaySoundFXClip(hurtSound, transform, .2f);
                 StartCoroutine(takeDamage());
             } 
         }
