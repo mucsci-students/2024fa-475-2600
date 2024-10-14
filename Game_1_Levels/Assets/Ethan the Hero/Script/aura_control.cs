@@ -5,7 +5,7 @@ using UnityEngine;
 public class aura_control : MonoBehaviour
 {
     public float timer = 0f;
-    public bool auraActive = false ;
+    public bool auraActive = false;
 
     private GameObject player;
     // Start is called before the first frame update
