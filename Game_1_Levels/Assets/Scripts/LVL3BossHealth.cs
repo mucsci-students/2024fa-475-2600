@@ -13,10 +13,10 @@ public class LVL3BossHealth : MonoBehaviour
         if (other.tag == "Sword" && script.isDead == false)
         {
             bossHealthBar.fillAmount = script.Health / 1000f;
-            if(script.Health <= 0f)
-            {
-                Destroy(this.gameObject);
-            }
+            // if(script.Health <= 0f)
+            // {
+            //     Destroy(this.gameObject);
+            // }
         }
     }
 }
