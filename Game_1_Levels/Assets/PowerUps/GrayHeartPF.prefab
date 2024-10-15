@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5846806176608634482}
   - component: {fileID: 509245313829011916}
   - component: {fileID: 2289065800172885817}
+  - component: {fileID: -3893246181099414135}
   m_Layer: 0
   m_Name: GrayHeartPF
   m_TagString: HealthPack
@@ -170,3 +171,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22bb29f0baef7334b83ed91858f7ff2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-3893246181099414135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2504210116066799711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7803491407994b50812db46fca201f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healAmount: 200

@@ -13,6 +13,7 @@ TagManager:
   - movingPlatform
   - Enemy
   - HealthManager
+  - HealthPack
   layers:
   - Default
   - TransparentFX
@@ -25,7 +26,7 @@ TagManager:
   - Platforms
   - Walls
   - Slopes
-  - 
+  - SpecialAttacks
   - 
   - 
   - 

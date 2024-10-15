@@ -171,7 +171,7 @@ MonoBehaviour:
   pointA: {fileID: 4106681373164142876}
   pointB: {fileID: 1598371422418367850}
   speed: 1
-  heartPrefab: {fileID: 7669446628929368331, guid: a3791880e5a044931acdcccdf0d83fe8, type: 3}
+  heartPrefab: {fileID: 7334605845939487594, guid: 92fd911640360564ab03c537938aa025, type: 3}
 --- !u!60 &955955069061390267
 PolygonCollider2D:
   m_ObjectHideFlags: 0
