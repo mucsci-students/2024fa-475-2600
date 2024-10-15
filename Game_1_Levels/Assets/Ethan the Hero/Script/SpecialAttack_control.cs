@@ -51,9 +51,6 @@ namespace EthanTheHero
         void Update()
         {
             index = -1;
-        
-            
-
             if (auraControl.auraActive){
                 for(int i = 0 ; i < auras.Count;i++){
                     if(auras[i]!= null && auras[i].activeInHierarchy){
@@ -91,38 +88,20 @@ namespace EthanTheHero
         {
             if(other.tag != "Player" && other.tag != "Sword")
             {
-                if (index == 0) //for ice
+                float[] damages = {10f, 10f, 15f};//ice, lightning, and fire
+                if (index > -1 && index < 3)
                 {
                     if (other.tag == "Slime")
                     {
-                        other.GetComponent<SlimeMovement>().health -= 10;
+                        other.GetComponent<SlimeMovement>().health -= damages[index];
                     }
                     else if (other.tag == "Knight")
                     {
-                        other.GetComponent<KnightPatrol>().health -= 10;
+                        other.GetComponent<KnightPatrol>().health -= damages[index];
                     }
-                    
-                }
-                else if (index == 1) //for lightning
-                {
-                    if (other.tag == "Slime")
+                    else if (other.tag == "Skeleton")
                     {
-                        other.GetComponent<SlimeMovement>().health -= 10;
-                    }
-                    else if (other.tag == "Knight")
-                    {
-                        other.GetComponent<KnightPatrol>().health -= 10;
-                    }
-                }
-                else if (index != -1)//for fire
-                {
-                    if (other.tag == "Slime")
-                    {
-                        other.GetComponent<SlimeMovement>().health -= 15;
-                    }
-                    else if (other.tag == "Knight")
-                    {
-                        other.GetComponent<KnightPatrol>().health -= 15;
+                        other.GetComponent<SkeletonMovement>().health -= damages[index];
                     }
                 }
             }

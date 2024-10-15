@@ -12,7 +12,7 @@ public class EnemyAttackHB : MonoBehaviour
     { 
         if (other.tag == "Player")
         {
-            script.isAttack = true;
+            script.startAttack();
             timer = 0f;
         }
     }
@@ -24,7 +24,7 @@ public class EnemyAttackHB : MonoBehaviour
             timer += Time.deltaTime;
             if (timer >= 1f)
             {
-                script.isAttack = true;
+                script.startAttack();
                 timer = 0f;
             }
         }

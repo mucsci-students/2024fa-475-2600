@@ -80,19 +80,17 @@ public class KnightPatrol : MonoBehaviour
             flip();
             currentPoint = pointB.transform;
             //isAttack = false;
-            // localScale.x = 1;
-            // transform.localScale = localScale;
             // myTargetValid = false;
             // anim.SetBool("isRunning", false);
             // StartCoroutine(goIdle(1));
         }
-        if (isAttack)
+        /*if (isAttack)
         {
             myTargetValid = false;
             anim.SetBool("isRunning", false);
             anim.SetTrigger("attack");
             StartCoroutine(attack());
-        }
+        }*/
         healthCheck();
     }
 
@@ -139,17 +137,23 @@ public class KnightPatrol : MonoBehaviour
     {
         int random = Random.Range(0, 10); // 0 - 9
         Transform temp = this.transform;
-        //Debug.Log("random is " + random);
         if (random < 3)
         {
             Instantiate(heartPrefab, temp.position, Quaternion.identity);
         }
     }
+    public void startAttack()
+    {
+        myTargetValid = false;
+        anim.SetBool("isRunning", false);
+        anim.SetTrigger("attack");
+        StartCoroutine(attack());
+    }
 
     IEnumerator attack()
     {
         healthCheck();
-        isAttack = false;
+        //isAttack = false;
         yield return new WaitForSeconds (.5f);
         //audioSource.PlayOneShot(clip, 2f);
         audioSource.Play();
