@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
-public class SlimeMovement : MonoBehaviour
+public class SkeletonMovement : MonoBehaviour
 {
     // declared components
     private Animator anim;
@@ -10,7 +11,7 @@ public class SlimeMovement : MonoBehaviour
     private Transform targetPoint;
     private SpriteRenderer rend;
     // field values
-    public float health = 30;
+    public float health = 60;
     [SerializeField] private float damage = 10;
     //sound effects
     [SerializeField] private AudioClip hurtSound;
@@ -19,13 +20,12 @@ public class SlimeMovement : MonoBehaviour
     public HealthManager script;
     public GameObject pointA;
     public GameObject pointB;
+    public GameObject heartPrefab;
     //internal variables
     public float speed = 1;
-    public GameObject heartPrefab;
 
     void Start()
     {
-
         anim = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
         targetPoint = pointB.transform;
@@ -75,12 +75,13 @@ public class SlimeMovement : MonoBehaviour
             Instantiate(heartPrefab, temp.position, Quaternion.identity);
         }
     }
+
     IEnumerator goIdle() 
     {
         yield return new WaitForSeconds (2f);
         anim.SetBool("isRunning", true);
     }
-
+    
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Sword")
@@ -97,15 +98,15 @@ public class SlimeMovement : MonoBehaviour
             {
                 anim.SetTrigger("hurt");
                 SoundFXManager.instance.PlaySoundFXClip(hurtSound, transform, .2f);
-                StartCoroutine(DamageFlash());
+                StartCoroutine(takeDamage());
             } 
         }
-        else if(other.tag == "Player")
-        {
+        else if(other.tag == "Player"){
             script.takeDamage(damage);
         }
     }
-    IEnumerator DamageFlash()
+
+    IEnumerator takeDamage()
     {
         rend.enabled = false;
         yield return new WaitForSeconds (.1f);
@@ -115,6 +116,7 @@ public class SlimeMovement : MonoBehaviour
         yield return new WaitForSeconds (.1f);
         rend.enabled = true;
     }
+
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(pointA.transform.position, 0.5f);
@@ -122,3 +124,4 @@ public class SlimeMovement : MonoBehaviour
         Gizmos.DrawLine(pointA.transform.position, pointB.transform.position);
     }
 }
+
