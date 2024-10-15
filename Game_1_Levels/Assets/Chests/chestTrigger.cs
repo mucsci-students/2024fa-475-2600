@@ -15,7 +15,7 @@ public class chestTrigger : MonoBehaviour
     void Start()
     {
 
-        chest = GameObject.FindWithTag("Chest");
+        chest = gameObject;
         anim =  GetComponent<Animator>();
     }
 
