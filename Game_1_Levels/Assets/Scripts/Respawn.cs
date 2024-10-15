@@ -28,10 +28,12 @@ public class Respawn : MonoBehaviour
         player.transform.gameObject.GetComponent<aura_control>().auraActive = false;
         screen.SetActive(false);
         Time.timeScale = 1;
-        script.PositionPlayer();
+        SceneManager.LoadScene(script.currentLevel);
+        //script.PositionPlayer();
     }
     public void ExitToMenu()
     {
+        PlayerPrefs.SetInt("tempspawn", 3);
         Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }

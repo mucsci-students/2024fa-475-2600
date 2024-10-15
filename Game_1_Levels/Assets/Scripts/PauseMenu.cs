@@ -43,6 +43,7 @@ public class PauseMenu : MonoBehaviour
     }
     public void ExitToMenu()
     {
+        PlayerPrefs.SetInt("tempspawn", 3);
         Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }

@@ -43,7 +43,7 @@ public class HealthManager : MonoBehaviour
             {
                 timer = 0;
                 regenTimer = 0;
-                script.isDie = true;
+                script.Die();
             }
             return;
         }
@@ -74,6 +74,7 @@ public class HealthManager : MonoBehaviour
             
         else
         {
+
             SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.2f);
             animScript.isDead = true;
         }

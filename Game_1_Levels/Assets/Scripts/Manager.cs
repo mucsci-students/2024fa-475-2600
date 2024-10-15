@@ -12,13 +12,14 @@ public class Manager : MonoBehaviour
     public Transform BossSpawnPoint;
     private Transform currentSpawnPoint;
     private GameObject player;
-    public bool isDie = false;
     public int currentLevel;
+    public int spawnVal = 0;
 
     void Start ()
     {
         Time.timeScale = 1;
-        currentSpawnPoint = StartSpawnPoint;
+        spawnVal = (PlayerPrefs.GetInt("tempspawn") - 3) / 11;
+        setSpawnPoint(spawnVal);
         player = GameObject.FindWithTag("Player");
         PositionPlayer();
     }
@@ -29,16 +30,12 @@ public class Manager : MonoBehaviour
         SoundFXManager.instance.PlaySoundFXClip(script.regenSound, transform, 0.1f);
         script.currentHealth = 1;
         script.healthBar.fillAmount = script.currentHealth / script.maxHealth;
-        isDie = false;
 	}
 
     public void setSpawnPoint(int spawnpoint)
     {
-        if (spawnpoint == 0)
-        {
-            currentSpawnPoint = StartSpawnPoint;
-        }
-        else if (spawnpoint == 1)
+        spawnVal = spawnpoint;
+        if (spawnpoint == 1)
         {
             currentSpawnPoint = SpawnPoint1;
         }
@@ -50,15 +47,22 @@ public class Manager : MonoBehaviour
         {
             currentSpawnPoint = BossSpawnPoint;
         }
+        else
+        {
+            currentSpawnPoint = StartSpawnPoint;
+        }
+
     }
-    void Update ()
+    public void Die()
+    {
+        //noise since playerprefs is public
+        PlayerPrefs.SetInt("tempspawn", (spawnVal * 11) + 3);
+        respawner.Die();
+    }
+    /*void Update ()
 	{
         if(Time.timeScale == 0){
             return;
         }
-		if (isDie)
-		{
-            respawner.Die();
-		}
-	}
+	}*/
 }

@@ -2326,6 +2326,7 @@ MonoBehaviour:
   deathSound: {fileID: 0}
   hurtSound: {fileID: 0}
   healSound: {fileID: 0}
+  superHealSound: {fileID: 0}
   regenSound: {fileID: 0}
   currentHealth: 1
   maxHealth: 100
