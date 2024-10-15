@@ -38,7 +38,7 @@ public class SlimeMovement : MonoBehaviour
         {
             return;
         }
-        healthCheck();
+        // healthCheck();
         int negative = -1;
         if (targetPoint == pointB.transform)
         {
@@ -81,15 +81,14 @@ public class SlimeMovement : MonoBehaviour
         yield return new WaitForSeconds (2f);
         anim.SetBool("isRunning", true);
     }
-    public void healthCheck(){
-        if(health <=0)
-        {
-            anim.SetTrigger("death");
-            SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.3f);
-            Destroy(transform.parent.gameObject, 0.5f);
-            randomHeart();
-        }
-    }
+    // public void healthCheck(){
+    //     if(health <=0)
+    //     {
+    //         anim.SetTrigger("death");
+    //         // Destroy(transform.parent.gameObject, 0.5f);
+    //         // randomHeart();
+    //     }
+    // }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -103,6 +102,13 @@ public class SlimeMovement : MonoBehaviour
                 SoundFXManager.instance.PlaySoundFXClip(hurtSound, transform, .2f);
                 StartCoroutine(DamageFlash());
             } 
+            else if (health <= 0)
+            {
+                anim.SetTrigger("death");
+                SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, .3f);
+                Destroy(transform.parent.gameObject, 0.5f);
+                randomHeart();
+            }
         }
         else if(other.tag == "Player")
         {
