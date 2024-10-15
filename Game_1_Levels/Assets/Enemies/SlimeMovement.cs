@@ -8,8 +8,9 @@ public class SlimeMovement : MonoBehaviour
     private Animator anim;
     private Rigidbody2D body;
     private Transform targetPoint;
+    private SpriteRenderer rend;
     // field values
-    public float health = 60;
+    public float health = 30;
     [SerializeField] private float damage = 10;
     //sound effects
     [SerializeField] private AudioClip hurtSound;
@@ -20,8 +21,6 @@ public class SlimeMovement : MonoBehaviour
     public GameObject pointB;
     //internal variables
     public float speed = 1;
-
-    private SpriteRenderer rend;
     public GameObject heartPrefab;
 
     void Start()
@@ -33,8 +32,6 @@ public class SlimeMovement : MonoBehaviour
         anim.SetBool("isRunning", true);
         rend = this.gameObject.GetComponent<SpriteRenderer>();
     }
-
-    // Update is called once per frame
     void Update()
     {
         if(Time.timeScale == 0 || !anim.GetBool("isRunning"))
@@ -50,7 +47,6 @@ public class SlimeMovement : MonoBehaviour
         
         if (Mathf.Abs(transform.position.x - targetPoint.position.x) < 0.5f)
         {
-            //Debug.Log("I should flip now");
             flip();
             anim.SetBool("isRunning", false);
             StartCoroutine(goIdle());
@@ -64,31 +60,27 @@ public class SlimeMovement : MonoBehaviour
             }
         }
     }
-
     private void flip()
     {
         Vector3 localScale = transform.localScale;
         localScale.x *= -1;
         transform.localScale = localScale;
     }
-
     void randomHeart()
     {
         int random = Random.Range(0, 10); // 0 - 9
         Transform temp = this.transform;
-        Debug.Log("random is " + random);
         if (random < 3)
         {
             Instantiate(heartPrefab, temp.position, Quaternion.identity);
         }
     }
-
     IEnumerator goIdle() 
     {
         yield return new WaitForSeconds (2f);
         anim.SetBool("isRunning", true);
     }
-    
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Sword")
@@ -105,15 +97,15 @@ public class SlimeMovement : MonoBehaviour
             {
                 anim.SetTrigger("hurt");
                 SoundFXManager.instance.PlaySoundFXClip(hurtSound, transform, .2f);
-                StartCoroutine(takeDamage());
+                StartCoroutine(DamageFlash());
             } 
         }
-        else if(other.tag == "Player"){
+        else if(other.tag == "Player")
+        {
             script.takeDamage(damage);
         }
     }
-
-    IEnumerator takeDamage()
+    IEnumerator DamageFlash()
     {
         rend.enabled = false;
         yield return new WaitForSeconds (.1f);
@@ -123,7 +115,6 @@ public class SlimeMovement : MonoBehaviour
         yield return new WaitForSeconds (.1f);
         rend.enabled = true;
     }
-
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(pointA.transform.position, 0.5f);

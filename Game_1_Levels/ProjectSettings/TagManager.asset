@@ -28,8 +28,8 @@ TagManager:
   - Walls
   - Slopes
   - SpecialAttacks
-  - 
-  - 
+  - Enemy
+  - Player
   - 
   - 
   - 
@@ -99,4 +99,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 1801188855
     locked: 0

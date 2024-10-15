@@ -36,6 +36,11 @@ public class KnightPatrol : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale == 0)
+        {
+            return;
+        }
+
         Vector2 point = currentPoint.position - transform.position;
         if (currentPoint == pointB.transform && myTargetValid)
         {
@@ -116,7 +121,7 @@ public class KnightPatrol : MonoBehaviour
     {
         if (other.tag == "Sword" && isDead == false)
         {
-            Debug.Log("Health is " + Health);
+            //Debug.Log("Health is " + Health);
             SoundFXManager.instance.PlaySoundFXClip(hurtSound, transform, .25f);
             StartCoroutine(takeDamage());
             Health -= playerSwordDamage;
@@ -127,7 +132,7 @@ public class KnightPatrol : MonoBehaviour
     {
         int random = Random.Range(0, 10); // 0 - 9
         Transform temp = this.transform;
-        Debug.Log("random is " + random);
+        //Debug.Log("random is " + random);
         if (random < 3)
         {
             Instantiate(heartPrefab, temp.position, Quaternion.identity);

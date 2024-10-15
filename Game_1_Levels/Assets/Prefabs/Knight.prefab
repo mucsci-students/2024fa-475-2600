@@ -101,7 +101,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5827972058675445228}
   - component: {fileID: 8135301925927489798}
-  - component: {fileID: 690572015201927402}
   m_Layer: 0
   m_Name: swordHitbox2
   m_TagString: Untagged
@@ -241,19 +240,6 @@ PolygonCollider2D:
       - {x: -4.7763767, y: -2.1580975}
       - {x: -4.7562904, y: -2.159985}
   m_UseDelaunayMesh: 0
---- !u!114 &690572015201927402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5356050548385290823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2480aea909d9b249a4e61a9ca3b98fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
 --- !u!1 &6519743894506030394
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,7 +250,6 @@ GameObject:
   m_Component:
   - component: {fileID: 595776111142988686}
   - component: {fileID: 7126286926243759424}
-  - component: {fileID: 7017878254747133325}
   m_Layer: 0
   m_Name: swordHitbox1
   m_TagString: Untagged
@@ -404,19 +389,6 @@ PolygonCollider2D:
       - {x: -4.7763767, y: -2.1580975}
       - {x: -4.7562904, y: -2.159985}
   m_UseDelaunayMesh: 0
---- !u!114 &7017878254747133325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6519743894506030394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2480aea909d9b249a4e61a9ca3b98fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
 --- !u!1 &9029141876265505944
 GameObject:
   m_ObjectHideFlags: 0
