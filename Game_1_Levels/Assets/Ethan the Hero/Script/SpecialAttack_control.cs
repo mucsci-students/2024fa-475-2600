@@ -28,6 +28,8 @@ namespace EthanTheHero
 
         public bool onCoolDown;
 
+        private int index;
+
         void Awake()
         {
             playerMv = GetComponent<PlayerMovement>();
@@ -48,7 +50,7 @@ namespace EthanTheHero
         // Update is called once per frame
         void Update()
         {
-            int index = -1;
+            index = -1;
         
             
 
@@ -81,8 +83,48 @@ namespace EthanTheHero
                         Destroy(Instantiate(fire_prefab,new Vector3(player.transform.position.x + (fire_prefab.transform.position.x * direction),player.transform.position.y + fire_prefab.transform.position.y,player.transform.position.z),fire_prefab.transform.rotation),2.5f);
                     }
                     onCoolDown = true;
-                }
+                }              
+            }
+        }
+
+        void OnTriggerEnter2D (Collider2D other)
+        {
+            if(other.tag != "Player" && other.tag != "Sword")
+            {
+                if (index == 0) //for ice
+                {
+                    if (other.tag == "Slime")
+                    {
+                        other.GetComponent<SlimeMovement>().health -= 10;
+                    }
+                    else if (other.tag == "Knight")
+                    {
+                        other.GetComponent<KnightPatrol>().health -= 10;
+                    }
                     
+                }
+                else if (index == 1) //for lightning
+                {
+                    if (other.tag == "Slime")
+                    {
+                        other.GetComponent<SlimeMovement>().health -= 10;
+                    }
+                    else if (other.tag == "Knight")
+                    {
+                        other.GetComponent<KnightPatrol>().health -= 10;
+                    }
+                }
+                else if (index != -1)//for fire
+                {
+                    if (other.tag == "Slime")
+                    {
+                        other.GetComponent<SlimeMovement>().health -= 15;
+                    }
+                    else if (other.tag == "Knight")
+                    {
+                        other.GetComponent<KnightPatrol>().health -= 15;
+                    }
+                }
             }
         }
     }

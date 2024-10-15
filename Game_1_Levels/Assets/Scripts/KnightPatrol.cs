@@ -15,7 +15,7 @@ public class KnightPatrol : MonoBehaviour
     private Transform currentPoint;
     public float speed;
     public bool isAttack = false;
-    public float Health = 100f;
+    public float health = 100f;
     private bool myTargetValid;
     [SerializeField] private AudioClip attackSound;
 	[SerializeField] private AudioClip hurtSound;
@@ -98,7 +98,7 @@ public class KnightPatrol : MonoBehaviour
 
     private void healthCheck()
     {
-        if(Health <= 0f)
+        if(health <= 0f)
         {
             anim.SetBool("isRunning", false);
             myTargetValid = false;
@@ -127,8 +127,8 @@ public class KnightPatrol : MonoBehaviour
             //Debug.Log("Health is " + Health);
             SoundFXManager.instance.PlaySoundFXClip(hurtSound, transform, .25f);
             StartCoroutine(takeDamage());
-            Health -= playerSwordDamage;
-            if(Health <= 0f)
+            health -= playerSwordDamage;
+            if(health <= 0f)
             {
                 SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.1f);
             }

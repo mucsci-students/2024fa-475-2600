@@ -15,6 +15,8 @@ public class aura_control : MonoBehaviour
 
     private List<GameObject> auras;
 
+    private int index;
+
     void Start()
     {
         player = GameObject.FindWithTag("Player");
@@ -27,7 +29,7 @@ public class aura_control : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int index = -1;
+        index = -1;
         if(Time.timeScale != 0 && auraActive){
             
             for(int i = 0 ; i < auras.Count;i++){
@@ -37,13 +39,29 @@ public class aura_control : MonoBehaviour
             }
 
             timer += Time.deltaTime;
-            if(timer >= auraTime && index != -1){
+            if(timer >= auraTime && index != -1)
+            {
                 if(auras[index]!=null){
                     player.transform.Find(auraSprites[index]).gameObject.SetActive(false);
                 }
                 auraActive = false;
                 timer = 0f;
             }
+            else if (timer >= (auraTime - 15f) && index != -1)
+            {
+                StartCoroutine(endPowerup());
+            }
         }
+    }
+
+    IEnumerator endPowerup()
+    {
+        player.transform.Find(auraSprites[index]).gameObject.SetActive(false);
+        yield return new WaitForSeconds (.1f);
+        player.transform.Find(auraSprites[index]).gameObject.SetActive(true);
+        yield return new WaitForSeconds (.1f);
+        player.transform.Find(auraSprites[index]).gameObject.SetActive(false);
+        yield return new WaitForSeconds (.1f);
+        player.transform.Find(auraSprites[index]).gameObject.SetActive(true);
     }
 }

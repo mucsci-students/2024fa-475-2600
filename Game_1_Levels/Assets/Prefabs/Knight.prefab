@@ -436,7 +436,7 @@ GameObject:
   - component: {fileID: 9123800603663428618}
   m_Layer: 0
   m_Name: Knight
-  m_TagString: Untagged
+  m_TagString: Knight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -622,7 +622,7 @@ MonoBehaviour:
   anim: {fileID: 0}
   speed: 0.75
   isAttack: 0
-  Health: 100
+  health: 100
   attackSound: {fileID: 8300000, guid: 2583c4fede125c84ea2c793559e1ded2, type: 3}
   hurtSound: {fileID: 8300000, guid: 5f9976e63233a421bbe9f6439b960e2b, type: 3}
   deathSound: {fileID: 8300000, guid: 05dfd79af881d4c24821abcecdbc4d03, type: 3}

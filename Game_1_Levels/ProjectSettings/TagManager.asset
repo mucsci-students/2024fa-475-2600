@@ -15,6 +15,8 @@ TagManager:
   - HealthManager
   - HealthPack
   - HealthChest
+  - Slime
+  - Knight
   layers:
   - Default
   - TransparentFX
