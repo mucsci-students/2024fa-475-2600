@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6230684187288269256}
   - component: {fileID: -3130461548314614129}
   - component: {fileID: -2649102069166522716}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HealthChest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1800908522451030133}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

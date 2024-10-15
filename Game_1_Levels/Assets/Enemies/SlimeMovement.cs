@@ -71,7 +71,7 @@ public class SlimeMovement : MonoBehaviour
     {
         int random = Random.Range(0, 10); // 0 - 9
         Transform temp = this.transform;
-        if (random < 3)
+        if (random < 3) 
         {
             Instantiate(heartPrefab, temp.position, Quaternion.identity);
         }
