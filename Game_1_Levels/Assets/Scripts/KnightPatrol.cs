@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class KnightPatrol : MonoBehaviour
 {
+    public AudioSource audioSource;
+    //public AudioClip clip;
+
     public GameObject pointA;
     public GameObject pointB;
     private Rigidbody2D rb;
@@ -125,6 +128,10 @@ public class KnightPatrol : MonoBehaviour
             SoundFXManager.instance.PlaySoundFXClip(hurtSound, transform, .25f);
             StartCoroutine(takeDamage());
             Health -= playerSwordDamage;
+            if(Health <= 0f)
+            {
+                SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.1f);
+            }
         }
     }
 
@@ -143,8 +150,11 @@ public class KnightPatrol : MonoBehaviour
     {
         healthCheck();
         isAttack = false;
-        yield return new WaitForSeconds (1f);
-        SoundFXManager.instance.PlaySoundFXClip(attackSound, transform, 2f);
+        yield return new WaitForSeconds (.5f);
+        //audioSource.PlayOneShot(clip, 2f);
+        audioSource.Play();
+        yield return new WaitForSeconds (.5f);
+        //SoundFXManager.instance.PlaySoundFXClip(attackSound, transform, 2f);
         anim.SetBool("isRunning", true);
         myTargetValid = true;
     }
@@ -153,7 +163,7 @@ public class KnightPatrol : MonoBehaviour
     {
         anim.SetBool("isDead", true);
         yield return new WaitForSeconds (2f);
-        SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.1f);
+        //SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.1f);
         Destroy(this.gameObject);
         randomHeart();
     }

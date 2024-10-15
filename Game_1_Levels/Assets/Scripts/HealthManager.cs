@@ -12,6 +12,7 @@ public class HealthManager : MonoBehaviour
     [SerializeField] private AudioClip deathSound;
 	[SerializeField] public AudioClip hurtSound;
     [SerializeField] public AudioClip healSound;
+    [SerializeField] public AudioClip superHealSound;
     [SerializeField] public AudioClip regenSound;
     private float timer = 0f;
     private float regenTimer = 0f;
@@ -87,6 +88,10 @@ public class HealthManager : MonoBehaviour
         if (healAmount > 10f && healAmount < 50f)
         {
             SoundFXManager.instance.PlaySoundFXClip(healSound, transform, 0.2f);
+        }
+        else if (healAmount == 250f)
+        {
+            SoundFXManager.instance.PlaySoundFXClip(superHealSound, transform, 0.2f);
         }
     }
 }
