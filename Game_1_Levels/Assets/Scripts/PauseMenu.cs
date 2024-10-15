@@ -6,10 +6,14 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     private GameObject screen;
+    private GameObject controls;
     public Manager script;
     private bool paused = false;
+    private bool controlsOpen = false;
     void Start()
     {
+        controls = GameObject.Find("Controls");
+        controls.SetActive(false);
         screen = GameObject.Find("PauseScreen");
         screen.SetActive(false);
     }
@@ -33,6 +37,7 @@ public class PauseMenu : MonoBehaviour
     public void Unpause()
     {
         screen.SetActive(false);
+        controls.SetActive(false);
         paused = false;
         Time.timeScale = 1;
     }
@@ -40,5 +45,10 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(0);
+    }
+    public void ToggleControls()
+    {
+        controlsOpen = !controlsOpen;
+        controls.SetActive(controlsOpen);
     }
 }
