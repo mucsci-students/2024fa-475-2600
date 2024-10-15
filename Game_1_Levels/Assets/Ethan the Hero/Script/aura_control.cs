@@ -6,6 +6,7 @@ public class aura_control : MonoBehaviour
 {
     public float timer = 0f;
     public bool auraActive = false;
+    [SerializeField] private float auraTime = 20f;
 
     private GameObject player;
     // Start is called before the first frame update
@@ -36,7 +37,7 @@ public class aura_control : MonoBehaviour
             }
 
             timer += Time.deltaTime;
-            if(timer >= 15f && index != -1){
+            if(timer >= auraTime && index != -1){
                 if(auras[index]!=null){
                     player.transform.Find(auraSprites[index]).gameObject.SetActive(false);
                 }

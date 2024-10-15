@@ -50,7 +50,7 @@ GameObject:
   - component: {fileID: 8910759383736196667}
   - component: {fileID: 5369401806970935195}
   - component: {fileID: 8471478606022627834}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -312,6 +312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 0
   auraActive: 0
+  auraTime: 20
 --- !u!114 &5369401806970935195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,7 +488,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4687651603545491521}
   - component: {fileID: 2910189518588570489}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: swordHitbox2
   m_TagString: Sword
   m_Icon: {fileID: 0}
@@ -604,7 +605,7 @@ GameObject:
   m_Component:
   - component: {fileID: 25275997689281907}
   - component: {fileID: 8336816989865669784}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: swordHitbox1
   m_TagString: Sword
   m_Icon: {fileID: 0}
@@ -1010,7 +1011,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4821319972384491717}
   - component: {fileID: 6521715003506446397}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: swordHitbox4
   m_TagString: Sword
   m_Icon: {fileID: 0}
@@ -1171,7 +1172,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4204184482959664402}
   - component: {fileID: 1792912357449785801}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: swordHitbox3
   m_TagString: Sword
   m_Icon: {fileID: 0}
