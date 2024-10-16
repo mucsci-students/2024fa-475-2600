@@ -4,37 +4,23 @@ using UnityEngine;
 
 public class LoadBoxScript : MonoBehaviour
 {
+    void Start(){
+        this.transform.GetChild(0).gameObject.SetActive(false);
+    }
     void OnTriggerEnter2D (Collider2D other)
     {
-        if (other.tag == "Slime")
+        if (other.tag == "Player")
         {
-            other.transform.GetChild(0).gameObject.SetActive(true);
-        }
-        else if (other.tag == "Skeleton")
-        {
-            other.transform.GetChild(0).gameObject.transform.GetChild(2).gameObject.SetActive(true);
-        }
-        else if (other.tag == "Knight")
-        {
-            other.GetComponent<SpriteRenderer>().enabled = true;
+            this.transform.GetChild(0).gameObject.SetActive(true);
         }
 
     }
 
     void OnTriggerExit2D (Collider2D other)
     {
-        if (other.tag == "Slime")
+        if (other.tag == "Player")
         {
-            other.transform.GetChild(0).gameObject.SetActive(false);
+            this.transform.GetChild(0).gameObject.SetActive(false);
         }
-        else if (other.tag == "Skeleton")
-        {
-            other.transform.GetChild(0).gameObject.transform.GetChild(2).gameObject.SetActive(false);
-        }
-        else if (other.tag == "Knight")
-        {
-            other.GetComponent<SpriteRenderer>().enabled = false;
-        }
-
     }
 }
