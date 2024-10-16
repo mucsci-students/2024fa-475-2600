@@ -157,9 +157,9 @@ public class SkeletonMovement : MonoBehaviour
 
     IEnumerator death()
     {
-        yield return new WaitForSeconds (1.5f);
+        yield return new WaitForSeconds (1f);
         //SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.1f);
-        Destroy(this.gameObject);
+        Destroy(gameObject);
         randomHeart();
     }
 
