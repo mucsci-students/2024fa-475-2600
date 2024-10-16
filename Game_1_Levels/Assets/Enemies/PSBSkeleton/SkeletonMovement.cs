@@ -103,8 +103,8 @@ public class SkeletonMovement : MonoBehaviour
             health -= playerSwordDamage;
             if(health <=0)
             {
-                SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.25f);
-                myTargetValid = false;
+                //SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.25f);
+                //myTargetValid = false;
                 anim.SetTrigger("DeathTrigger");
             }
             else
@@ -116,12 +116,13 @@ public class SkeletonMovement : MonoBehaviour
     }
     private void healthCheck()
     {
-        if(health <= 0)
+        if(health <= 0 && isDead == false)
         { 
             myTargetValid = false;
             Destroy(attackHitBox);
             canRun = false;
             isDead = true;
+            SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.25f);
             StartCoroutine(death());
         }
     }
