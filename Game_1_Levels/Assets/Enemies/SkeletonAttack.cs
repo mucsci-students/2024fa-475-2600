@@ -9,7 +9,7 @@ private float timer = 0f;
 
     void OnTriggerEnter2D (Collider2D other)
     { 
-        if (other.tag == "Player")
+        if (other.tag == "Player" && script.isDead == false)
         {
             script.startAttack();
             
@@ -19,7 +19,7 @@ private float timer = 0f;
 
     void OnTriggerStay2D (Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && script.isDead == false)
         {
             timer += Time.deltaTime;
             if (timer >= 1f)

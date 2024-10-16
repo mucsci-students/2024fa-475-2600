@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 8595501285551997476}
   m_Layer: 0
   m_Name: SkeletonEnemy
-  m_TagString: Untagged
+  m_TagString: Skeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -148,6 +148,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkeletonWarrior
       objectReference: {fileID: 0}
+    - target: {fileID: 312320201983474571, guid: af8372814d3915847a2d6b83ba8b3dfe, type: 3}
+      propertyPath: m_TagString
+      value: Skeleton
+      objectReference: {fileID: 0}
+    - target: {fileID: 569652438584342928, guid: af8372814d3915847a2d6b83ba8b3dfe, type: 3}
+      propertyPath: m_TagString
+      value: Skeleton
+      objectReference: {fileID: 0}
     - target: {fileID: 905952149058363524, guid: af8372814d3915847a2d6b83ba8b3dfe, type: 3}
       propertyPath: pointA
       value: 
@@ -156,6 +164,10 @@ PrefabInstance:
       propertyPath: pointB
       value: 
       objectReference: {fileID: 2665459898664181927}
+    - target: {fileID: 905952149058363524, guid: af8372814d3915847a2d6b83ba8b3dfe, type: 3}
+      propertyPath: skeletonChild
+      value: 
+      objectReference: {fileID: 2137770724520361963}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -167,6 +179,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1530737831275657397}
   m_SourcePrefab: {fileID: 100100000, guid: af8372814d3915847a2d6b83ba8b3dfe, type: 3}
+--- !u!1 &2137770724520361963 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 569652438584342928, guid: af8372814d3915847a2d6b83ba8b3dfe, type: 3}
+  m_PrefabInstance: {fileID: 1895220471134340731}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2168687092180581872 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 312320201983474571, guid: af8372814d3915847a2d6b83ba8b3dfe, type: 3}
@@ -188,7 +205,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 2675fc124a8b71e43ba9923caff455d8, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

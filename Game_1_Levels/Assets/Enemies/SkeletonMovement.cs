@@ -30,6 +30,8 @@ public class SkeletonMovement : MonoBehaviour
     private bool canRun;
     public bool isDead = false;
 
+    public GameObject skeletonChild;
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -50,19 +52,11 @@ public class SkeletonMovement : MonoBehaviour
                 anim.SetTrigger("MoveTrigger");
             }
             runTimer = 0f;
-        }   
-        //if(Time.timeScale == 0 || !anim.GetBool("isRunning"))
+        }
         if(Time.timeScale == 0)
         {
             return;
         }
-        // int negative = -1;
-        // if (currentPoint == pointB.transform)
-        // {
-        //     negative *=-1;
-        // }
-        // body.velocity = new Vector2(speed*negative, 0);
-
         Vector2 point = currentPoint.position - transform.position;
         if (currentPoint == pointB.transform && myTargetValid)
         {
@@ -73,18 +67,17 @@ public class SkeletonMovement : MonoBehaviour
             body.velocity = new Vector2(-speed, 0);
         }
         
-        if (Vector2.Distance(transform.position, currentPoint.position) < .8f && currentPoint == pointB.transform)
+        if (Vector2.Distance(transform.position.x, currentPoint.position.x) < .8f)
         {
-            Debug.Log("I should flip now");
             flip();
-            currentPoint = pointA.transform;
-
-        }
-        if (Vector2.Distance(transform.position, currentPoint.position) < .8f && currentPoint == pointA.transform)
-        { 
-            Debug.Log("I should flip now");
-            flip();
-            currentPoint = pointB.transform;
+            if(currentPoint == pointB.transform)
+            {
+                currentPoint = pointA.transform;
+            }
+            else
+            {
+                currentPoint = pointB.transform;
+            }
         }
         healthCheck();
     }
@@ -103,13 +96,6 @@ public class SkeletonMovement : MonoBehaviour
             Instantiate(heartPrefab, temp.position, Quaternion.identity);
         }
     }
-
-    // IEnumerator goIdle() 
-    // {
-    //     yield return new WaitForSeconds (2f);
-    //     anim.SetBool("isRunning", true);
-    // }
-    
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Sword" && isDead == false)
@@ -117,13 +103,13 @@ public class SkeletonMovement : MonoBehaviour
             health -=10;
             if(health <=0)
             {
-                SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.3f);
+                SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.25f);
                 anim.SetTrigger("DeathTrigger");
             }
             else
             {
                 SoundFXManager.instance.PlaySoundFXClip(hurtSound, transform, .2f);
-                //StartCoroutine(takeDamage());
+                StartCoroutine(takeDamage());
             } 
         }
     }
@@ -157,13 +143,13 @@ public class SkeletonMovement : MonoBehaviour
     }
     IEnumerator takeDamage()
     {
-        this.gameObject.SetActive(false);
+        skeletonChild.SetActive(false);
         yield return new WaitForSeconds (.1f);
-        this.gameObject.SetActive(true);
+        skeletonChild.SetActive(true);
         yield return new WaitForSeconds (.1f);
-        this.gameObject.SetActive(false);
+        skeletonChild.SetActive(false);
         yield return new WaitForSeconds (.1f);
-        this.gameObject.SetActive(true);
+        skeletonChild.SetActive(true);
     }
 
     IEnumerator death()

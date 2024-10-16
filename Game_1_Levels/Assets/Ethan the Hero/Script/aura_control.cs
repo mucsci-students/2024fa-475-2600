@@ -17,7 +17,7 @@ public class aura_control : MonoBehaviour
 
     private int index;
 
-    private GameObject currentAura;
+    //private GameObject currentAura;
 
     private Animator anim;
 
