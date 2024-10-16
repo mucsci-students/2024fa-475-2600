@@ -30,6 +30,8 @@ public class SkeletonMovement : MonoBehaviour
     private bool canRun;
     public bool isDead = false;
 
+    public GameObject skeletonChild;
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -123,7 +125,7 @@ public class SkeletonMovement : MonoBehaviour
             else
             {
                 SoundFXManager.instance.PlaySoundFXClip(hurtSound, transform, .2f);
-                //StartCoroutine(takeDamage());
+                StartCoroutine(takeDamage());
             } 
         }
     }
@@ -157,13 +159,13 @@ public class SkeletonMovement : MonoBehaviour
     }
     IEnumerator takeDamage()
     {
-        this.gameObject.SetActive(false);
+        skeletonChild.SetActive(false);
         yield return new WaitForSeconds (.1f);
-        this.gameObject.SetActive(true);
+        skeletonChild.SetActive(true);
         yield return new WaitForSeconds (.1f);
-        this.gameObject.SetActive(false);
+        skeletonChild.SetActive(false);
         yield return new WaitForSeconds (.1f);
-        this.gameObject.SetActive(true);
+        skeletonChild.SetActive(true);
     }
 
     IEnumerator death()
