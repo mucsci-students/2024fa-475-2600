@@ -21,6 +21,7 @@ public class SlimeMovement : MonoBehaviour
     public GameObject pointB;
     //internal variables
     public float speed = 1;
+    public bool isDead = false;
     public GameObject heartPrefab;
 
     void Start()
@@ -92,7 +93,7 @@ public class SlimeMovement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Sword")
+        if (other.tag == "Sword" && isDead == false)
         {
             health -=10;
             
@@ -104,6 +105,7 @@ public class SlimeMovement : MonoBehaviour
             } 
             else if (health <= 0)
             {
+                isDead = true;
                 anim.SetTrigger("death");
                 SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, .3f);
                 Destroy(transform.parent.gameObject, 0.5f);

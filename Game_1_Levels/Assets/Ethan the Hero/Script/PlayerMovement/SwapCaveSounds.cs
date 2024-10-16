@@ -13,16 +13,23 @@ public class SwapCaveSounds : MonoBehaviour
     [SerializeField] private AudioClip prevWallSlidingSound;
     [SerializeField] private AudioClip newWallSlidingSound;
     
-    void OnTriggerEnter2D ()
+    void OnTriggerEnter2D (Collider2D other)
     {
-        script.runSound = newRunSound;
-        script.runSoundVolume = newRunVolume;
-        script.wallSlidingSound = newWallSlidingSound;
+        if (other.tag == "Player")
+        {
+            script.runSound = newRunSound;
+            script.runSoundVolume = newRunVolume;
+            script.wallSlidingSound = newWallSlidingSound;
+        }
+        
     }
-    void OnTriggerExit2D ()
+    void OnTriggerExit2D (Collider2D other)
     {
-        script.runSound = prevRunSound;
-        script.runSoundVolume = prevRunVolume;
-        script.wallSlidingSound = prevWallSlidingSound;
+        if (other.tag == "Player")
+        {
+            script.runSound = prevRunSound;
+            script.runSoundVolume = prevRunVolume;
+            script.wallSlidingSound = prevWallSlidingSound;
+        }
     }
 }
