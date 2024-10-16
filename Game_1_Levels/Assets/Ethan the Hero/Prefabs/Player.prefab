@@ -83,6 +83,7 @@ Transform:
   - {fileID: 8557683612535687650}
   - {fileID: 6034067372028460810}
   - {fileID: 7270089849449782079}
+  - {fileID: 2050550708556432988}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &212310412405186324
@@ -692,6 +693,96 @@ PolygonCollider2D:
       - {x: 0.7949543, y: -0.22515312}
       - {x: 0.8881166, y: -0.19266704}
   m_UseDelaunayMesh: 0
+--- !u!1 &2184777632291571852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2050550708556432988}
+  - component: {fileID: 8172681418085039480}
+  - component: {fileID: 4709447778223612534}
+  m_Layer: 0
+  m_Name: LoadBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2050550708556432988
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2184777632291571852}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 15.569889, y: -1.5461674, z: -0.15289015}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4787624443014810}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &8172681418085039480
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2184777632291571852}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -17.964, y: -3.3569221}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 67.473946, y: 75.45081}
+  m_EdgeRadius: 0
+--- !u!114 &4709447778223612534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2184777632291571852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79f724950cf610b4c8d166bd72dd229c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2388885010373277578
 GameObject:
   m_ObjectHideFlags: 0
@@ -1405,7 +1496,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6897573722227544101, guid: 624268b3a0656a2408cf57c199084816, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.32
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6897573722227544101, guid: 624268b3a0656a2408cf57c199084816, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1467,7 +1558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5528432935640500612, guid: d8a5d9e36fb0a004aae497c18aa5c6bb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5528432935640500612, guid: d8a5d9e36fb0a004aae497c18aa5c6bb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1561,7 +1652,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1923538403251774611, guid: 75d2757689558744ca2842c43dcf7c17, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.25
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1923538403251774611, guid: 75d2757689558744ca2842c43dcf7c17, type: 3}
       propertyPath: m_LocalPosition.y

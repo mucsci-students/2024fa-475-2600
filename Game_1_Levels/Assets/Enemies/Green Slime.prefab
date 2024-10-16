@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2674ae0a5797415d898553f453716a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 30
+  health: 50
   damage: 10
   hurtSound: {fileID: 8300000, guid: 34dbba3a536fa4a05b671154a81daf73, type: 3}
   deathSound: {fileID: 8300000, guid: 970fadaa395334d43a10c256957a159a, type: 3}

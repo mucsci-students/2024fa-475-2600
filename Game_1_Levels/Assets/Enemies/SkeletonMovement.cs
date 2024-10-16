@@ -67,7 +67,7 @@ public class SkeletonMovement : MonoBehaviour
             body.velocity = new Vector2(-speed, 0);
         }
         
-        if (Vector2.Distance(transform.position.x, currentPoint.position.x) < .8f)
+        if (Mathf.Abs(transform.position.x - currentPoint.position.x) < .8f)
         {
             flip();
             if(currentPoint == pointB.transform)
