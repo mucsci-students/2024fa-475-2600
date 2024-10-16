@@ -27,8 +27,8 @@ public class SkeletonMovement : MonoBehaviour
     public float speed = 1;
 
     private float runTimer = 0f;
-
     private bool canRun;
+    public bool isDead = false;
 
     void Start()
     {
@@ -73,14 +73,14 @@ public class SkeletonMovement : MonoBehaviour
             body.velocity = new Vector2(-speed, 0);
         }
         
-        if (Vector2.Distance(transform.position, currentPoint.position) < .75f && currentPoint == pointB.transform)
+        if (Vector2.Distance(transform.position, currentPoint.position) < .8f && currentPoint == pointB.transform)
         {
             Debug.Log("I should flip now");
             flip();
             currentPoint = pointA.transform;
 
         }
-        if (Vector2.Distance(transform.position, currentPoint.position) < .75f && currentPoint == pointA.transform)
+        if (Vector2.Distance(transform.position, currentPoint.position) < .8f && currentPoint == pointA.transform)
         { 
             Debug.Log("I should flip now");
             flip();
@@ -112,7 +112,7 @@ public class SkeletonMovement : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Sword")
+        if (other.tag == "Sword" && isDead == false)
         {
             health -=10;
             if(health <=0)
@@ -133,6 +133,7 @@ public class SkeletonMovement : MonoBehaviour
         { 
             myTargetValid = false;
             canRun = false;
+            isDead = true;
             StartCoroutine(death());
         }
     }
@@ -175,8 +176,8 @@ public class SkeletonMovement : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(pointA.transform.position, 0.75f);
-        Gizmos.DrawWireSphere(pointB.transform.position, 0.75f);
+        Gizmos.DrawWireSphere(pointA.transform.position, 0.8f);
+        Gizmos.DrawWireSphere(pointB.transform.position, 0.8f);
         Gizmos.DrawLine(pointA.transform.position, pointB.transform.position);
     }
 
