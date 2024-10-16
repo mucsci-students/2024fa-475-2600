@@ -23,7 +23,6 @@ public class Manager : MonoBehaviour
         player = GameObject.FindWithTag("Player");
         PositionPlayer();
     }
-
     public void PositionPlayer()
 	{
 		player.transform.position = currentSpawnPoint.transform.position;
@@ -31,7 +30,6 @@ public class Manager : MonoBehaviour
         script.currentHealth = 1;
         script.healthBar.fillAmount = script.currentHealth / script.maxHealth;
 	}
-
     public void setSpawnPoint(int spawnpoint)
     {
         spawnVal = spawnpoint;
@@ -51,7 +49,6 @@ public class Manager : MonoBehaviour
         {
             currentSpawnPoint = StartSpawnPoint;
         }
-
     }
     public void Die()
     {
@@ -59,10 +56,4 @@ public class Manager : MonoBehaviour
         PlayerPrefs.SetInt("tempspawn", (spawnVal * 11) + 3);
         respawner.Die();
     }
-    /*void Update ()
-	{
-        if(Time.timeScale == 0){
-            return;
-        }
-	}*/
 }
