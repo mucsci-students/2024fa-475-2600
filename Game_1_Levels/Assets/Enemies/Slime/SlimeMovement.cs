@@ -39,7 +39,6 @@ public class SlimeMovement : MonoBehaviour
         {
             return;
         }
-        // healthCheck();
         int negative = -1;
         if (targetPoint == pointB.transform)
         {
@@ -51,7 +50,6 @@ public class SlimeMovement : MonoBehaviour
         {
             flip();
             anim.SetBool("isRunning", false);
-            StartCoroutine(goIdle());
             if(targetPoint == pointB.transform)
             {
                 targetPoint = pointA.transform;
@@ -61,6 +59,8 @@ public class SlimeMovement : MonoBehaviour
                 targetPoint = pointB.transform;
             }
         }
+        anim.SetBool("isRunning", true);
+        healthCheck();
     }
     private void flip()
     {
@@ -77,40 +77,43 @@ public class SlimeMovement : MonoBehaviour
             Instantiate(heartPrefab, temp.position, Quaternion.identity);
         }
     }
-    IEnumerator goIdle() 
-    {
-        yield return new WaitForSeconds (2f);
-        anim.SetBool("isRunning", true);
-    }
-    // public void healthCheck(){
-    //     if(health <=0)
-    //     {
-    //         anim.SetTrigger("death");
-    //         // Destroy(transform.parent.gameObject, 0.5f);
-    //         // randomHeart();
-    //     }
+    // IEnumerator goIdle() 
+    // {
+    //     yield return new WaitForSeconds (2f);
+    //     anim.SetBool("isRunning", true);
     // }
+    public void healthCheck(){
+        if(health <=0)
+        {
+            anim.SetBool("isRunning", false);
+            isDead = true;
+            anim.SetTrigger("death");
+            SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, .3f);
+            Destroy(transform.parent.gameObject, 0.5f);
+            randomHeart();
+        }
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Sword" && isDead == false)
         {
-            health -=10;
-            
+            health -= 10;
+
             if(health > 0)
             {
                 anim.SetTrigger("hurt");
                 SoundFXManager.instance.PlaySoundFXClip(hurtSound, transform, .2f);
                 StartCoroutine(DamageFlash());
             } 
-            else if (health <= 0)
-            {
-                isDead = true;
-                anim.SetTrigger("death");
-                SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, .3f);
-                Destroy(transform.parent.gameObject, 0.5f);
-                randomHeart();
-            }
+            // else if (health <= 0)
+            // {
+            //     isDead = true;
+            //     anim.SetTrigger("death");
+            //     SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, .3f);
+            //     Destroy(transform.parent.gameObject, 0.5f);
+            //     randomHeart();
+            // }
         }
         else if(other.tag == "Player")
         {

@@ -18,6 +18,8 @@ TagManager:
   - Slime
   - Knight
   - Skeleton
+  - Cave1
+  - Cave2
   layers:
   - Default
   - TransparentFX

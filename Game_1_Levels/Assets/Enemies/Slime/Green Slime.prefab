@@ -16,9 +16,9 @@ GameObject:
   - component: {fileID: 9214193965490626391}
   - component: {fileID: 955955069061390267}
   - component: {fileID: 739786442740577682}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: GreenSlimeAnim
-  m_TagString: Enemy
+  m_TagString: Slime
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -171,6 +171,7 @@ MonoBehaviour:
   pointA: {fileID: 4106681373164142876}
   pointB: {fileID: 1598371422418367850}
   speed: 1
+  isDead: 0
   heartPrefab: {fileID: 7334605845939487594, guid: 92fd911640360564ab03c537938aa025, type: 3}
 --- !u!60 &955955069061390267
 PolygonCollider2D:
@@ -350,7 +351,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2140748005352427236}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: PointRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -381,7 +382,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4343513351800669431}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: PointLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -412,7 +413,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8068589428734277745}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Green Slime
   m_TagString: Slime
   m_Icon: {fileID: 0}
