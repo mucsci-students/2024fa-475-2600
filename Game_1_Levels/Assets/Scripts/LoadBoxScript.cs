@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class LoadBoxScript : MonoBehaviour
 {
-    void Start(){
+    void Start()
+    {
         this.transform.GetChild(0).gameObject.SetActive(false);
     }
     void OnTriggerEnter2D (Collider2D other)
