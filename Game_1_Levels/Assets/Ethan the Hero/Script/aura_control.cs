@@ -17,7 +17,7 @@ public class aura_control : MonoBehaviour
 
     private int index;
 
-    private GameObject currentAura;
+    //private GameObject currentAura;
 
     void Start()
     {
@@ -49,18 +49,18 @@ public class aura_control : MonoBehaviour
                 auraActive = false;
                 timer = 0f;
             }
-            else if (timer >= (auraTime - 15f) && index != -1)
-            {
-                currentAura = player.transform.Find(auraSprites[index]).gameObject;
-                currentAura.SetActive(false);
-                StartCoroutine(endPowerup());
-            }
+            // else if (timer >= (auraTime - 15f) && index != -1)
+            // {
+            //     currentAura = player.transform.Find(auraSprites[index]).gameObject;
+            //     currentAura.SetActive(false);
+            //     StartCoroutine(endPowerup());
+            // }
         }
     }
 
-    IEnumerator endPowerup()
-    {
-        yield return new WaitForSeconds (.5f);
-        currentAura.SetActive(true);
-    }
+    // IEnumerator endPowerup()
+    // {
+    //     yield return new WaitForSeconds (.5f);
+    //     currentAura.SetActive(true);
+    // }
 }

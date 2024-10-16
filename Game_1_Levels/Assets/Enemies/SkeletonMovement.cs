@@ -117,7 +117,7 @@ public class SkeletonMovement : MonoBehaviour
             health -=10;
             if(health <=0)
             {
-                SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.3f);
+                SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.25f);
                 anim.SetTrigger("DeathTrigger");
             }
             else
