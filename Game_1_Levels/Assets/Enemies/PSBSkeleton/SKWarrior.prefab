@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 312320201983474580}
   - component: {fileID: 1243164231499065487}
   - component: {fileID: 1648482256534356800}
-  - component: {fileID: 905952149058363524}
+  - component: {fileID: 1106067246960090326}
   m_Layer: 6
   m_Name: SKWarrior
   m_TagString: Untagged
@@ -329,7 +329,7 @@ PolygonCollider2D:
       - {x: 1.5923424, y: 3.7708435}
       - {x: 1.5286436, y: 3.9364185}
   m_UseDelaunayMesh: 0
---- !u!114 &905952149058363524
+--- !u!114 &1106067246960090326
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -338,11 +338,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 312320201983474571}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: daee43aaac49d1142bb454f3660f67c5, type: 3}
+  m_Script: {fileID: 11500000, guid: d9e6af366c1473d4186bbd549f552bc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 80
-  attackSound: {fileID: 8300000, guid: 503b90760c9e1e74aa1127a61168f727, type: 3}
+  attackSound: {fileID: 8300000, guid: 2583c4fede125c84ea2c793559e1ded2, type: 3}
   hurtSound: {fileID: 8300000, guid: 67b045178bbbd114681888957f7751c8, type: 3}
   deathSound: {fileID: 8300000, guid: 05dfd79af881d4c24821abcecdbc4d03, type: 3}
   script: {fileID: 0}
@@ -350,6 +350,8 @@ MonoBehaviour:
   pointB: {fileID: 0}
   heartPrefab: {fileID: 7334605845939487594, guid: 92fd911640360564ab03c537938aa025, type: 3}
   speed: 1
+  isDead: 0
+  skeletonChild: {fileID: 0}
 --- !u!1 &3376938067989768221
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,7 +442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc6958c320d5634da6340fd63bc3cf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 905952149058363524}
+  script: {fileID: 1106067246960090326}
 --- !u!1 &5501802393820512017
 GameObject:
   m_ObjectHideFlags: 0

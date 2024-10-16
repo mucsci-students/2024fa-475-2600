@@ -21,6 +21,7 @@ public class Checkpoint : MonoBehaviour
             flag.GetComponent<SpriteRenderer>().enabled = true;
             SoundFXManager.instance.PlaySoundFXClip(checkPointSound, transform, 0.1f);
             script.setSpawnPoint(spawn);
+            Destroy(this);
         }
     }
 }

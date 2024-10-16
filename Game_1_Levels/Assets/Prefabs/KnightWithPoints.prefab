@@ -232,6 +232,10 @@ PrefabInstance:
       propertyPath: pointB
       value: 
       objectReference: {fileID: 2796319354819464580}
+    - target: {fileID: 4001730398255450152, guid: 92874de454a9a0b47a65b7eb85c6ba4b, type: 3}
+      propertyPath: attackHitBox
+      value: 
+      objectReference: {fileID: 8896985801869099508}
     - target: {fileID: 7126286926243759424, guid: 92874de454a9a0b47a65b7eb85c6ba4b, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -250,5 +254,10 @@ PrefabInstance:
 --- !u!4 &2140868472879390270 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2508788030486337058, guid: 92874de454a9a0b47a65b7eb85c6ba4b, type: 3}
+  m_PrefabInstance: {fileID: 4568028686945404956}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8896985801869099508 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4907961047592651240, guid: 92874de454a9a0b47a65b7eb85c6ba4b, type: 3}
   m_PrefabInstance: {fileID: 4568028686945404956}
   m_PrefabAsset: {fileID: 0}

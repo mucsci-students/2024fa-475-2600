@@ -23,7 +23,9 @@ public class KnightPatrol : MonoBehaviour
     private SpriteRenderer rend;
     public GameObject heartPrefab;
     public bool isDead = false;
-    public float playerSwordDamage;
+    public float playerSwordDamage = 5f;
+
+    public GameObject attackHitBox;
     // private Vector3 localScale;
 
     void Start()
@@ -129,6 +131,7 @@ public class KnightPatrol : MonoBehaviour
             if(health <= 0f)
             {
                 SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.1f);
+                Destroy(attackHitBox);
             }
         }
     }

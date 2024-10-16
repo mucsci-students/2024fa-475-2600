@@ -9,7 +9,6 @@ public class SkeletonMovement : MonoBehaviour
     private Animator anim;
     private Rigidbody2D body;
     private Transform currentPoint;
-    private SpriteRenderer rend;
     // field values
     public float health = 80f;
 
@@ -31,6 +30,8 @@ public class SkeletonMovement : MonoBehaviour
     public bool isDead = false;
 
     public GameObject skeletonChild;
+    public GameObject attackHitBox;
+    public float playerSwordDamage = 5f;
 
     void Start()
     {
@@ -40,7 +41,6 @@ public class SkeletonMovement : MonoBehaviour
         anim.SetTrigger("MoveTrigger");
         myTargetValid = true;
         canRun = true;
-        rend = this.gameObject.GetComponent<SpriteRenderer>();
     }
     void Update()
     {
@@ -100,10 +100,12 @@ public class SkeletonMovement : MonoBehaviour
     {
         if (other.tag == "Sword" && isDead == false)
         {
-            health -=10;
+            health -= playerSwordDamage;
             if(health <=0)
             {
                 SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.25f);
+                Destroy(attackHitBox);
+                myTargetValid = false;
                 anim.SetTrigger("DeathTrigger");
             }
             else
