@@ -73,15 +73,15 @@ public class SkeletonMovement : MonoBehaviour
             body.velocity = new Vector2(-speed, 0);
         }
         
-        if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointB.transform)
+        if (Vector2.Distance(transform.position, currentPoint.position) < .75f && currentPoint == pointB.transform)
         {
             Debug.Log("I should flip now");
             flip();
             currentPoint = pointA.transform;
 
         }
-        if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointA.transform)
-        {
+        if (Vector2.Distance(transform.position, currentPoint.position) < .75f && currentPoint == pointA.transform)
+        { 
             Debug.Log("I should flip now");
             flip();
             currentPoint = pointB.transform;
@@ -175,8 +175,8 @@ public class SkeletonMovement : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(pointA.transform.position, 0.5f);
-        Gizmos.DrawWireSphere(pointB.transform.position, 0.5f);
+        Gizmos.DrawWireSphere(pointA.transform.position, 0.75f);
+        Gizmos.DrawWireSphere(pointB.transform.position, 0.75f);
         Gizmos.DrawLine(pointA.transform.position, pointB.transform.position);
     }
 
