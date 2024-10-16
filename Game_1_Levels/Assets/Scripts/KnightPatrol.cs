@@ -86,23 +86,24 @@ public class KnightPatrol : MonoBehaviour
             // anim.SetBool("isRunning", false);
             // StartCoroutine(goIdle(1));
         }
-        /*if (isAttack)
-        {
-            myTargetValid = false;
-            anim.SetBool("isRunning", false);
-            anim.SetTrigger("attack");
-            StartCoroutine(attack());
-        }*/
+        // if (isAttack)
+        // {
+        //     myTargetValid = false;
+        //     anim.SetBool("isRunning", false);
+        //     anim.SetTrigger("attack");
+        //     StartCoroutine(attack());
+        // }
         healthCheck();
     }
 
     private void healthCheck()
     {
-        if(health <= 0f)
+        if(health <= 0f && isDead == false)
         {
             anim.SetBool("isRunning", false);
             myTargetValid = false;
             isDead = true;
+            SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.1f);
             StartCoroutine(death());
         }
     }
@@ -130,7 +131,7 @@ public class KnightPatrol : MonoBehaviour
             health -= playerSwordDamage;
             if(health <= 0f)
             {
-                SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.1f);
+                //SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.1f);
                 Destroy(attackHitBox);
             }
         }
