@@ -67,7 +67,7 @@ public class SkeletonMovement : MonoBehaviour
             body.velocity = new Vector2(-speed, 0);
         }
         
-        if (Mathf.Abs(transform.position.x - currentPoint.position.x) < .8f)
+        if (Mathf.Abs(transform.position.x - currentPoint.position.x) < .75f)
         {
             flip();
             if(currentPoint == pointB.transform)
@@ -104,7 +104,6 @@ public class SkeletonMovement : MonoBehaviour
             if(health <=0)
             {
                 SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.25f);
-                Destroy(attackHitBox);
                 myTargetValid = false;
                 anim.SetTrigger("DeathTrigger");
             }
@@ -120,6 +119,7 @@ public class SkeletonMovement : MonoBehaviour
         if(health <= 0)
         { 
             myTargetValid = false;
+            Destroy(attackHitBox);
             canRun = false;
             isDead = true;
             StartCoroutine(death());
@@ -164,8 +164,8 @@ public class SkeletonMovement : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(pointA.transform.position, 0.8f);
-        Gizmos.DrawWireSphere(pointB.transform.position, 0.8f);
+        Gizmos.DrawWireSphere(pointA.transform.position, 0.75f);
+        Gizmos.DrawWireSphere(pointB.transform.position, 0.75f);
         Gizmos.DrawLine(pointA.transform.position, pointB.transform.position);
     }
 

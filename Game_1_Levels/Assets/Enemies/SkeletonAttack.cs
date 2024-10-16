@@ -12,7 +12,6 @@ private float timer = 0f;
         if (other.tag == "Player" && script.isDead == false)
         {
             script.startAttack();
-            
             timer = 0f;
         }
     }
