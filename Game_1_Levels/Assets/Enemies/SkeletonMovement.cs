@@ -8,11 +8,14 @@ public class SkeletonMovement : MonoBehaviour
     // declared components
     private Animator anim;
     private Rigidbody2D body;
-    private Transform targetPoint;
+    private Transform currentPoint;
     private SpriteRenderer rend;
     // field values
-    public float health = 60;
+    public float health = 80f;
+
+    private bool myTargetValid;
     //sound effects
+    [SerializeField] private AudioClip attackSound;
     [SerializeField] private AudioClip hurtSound;
     [SerializeField] private AudioClip deathSound;
     // linked objects
@@ -23,42 +26,67 @@ public class SkeletonMovement : MonoBehaviour
     //internal variables
     public float speed = 1;
 
+    private float runTimer = 0f;
+
+    private bool canRun;
+
     void Start()
     {
         anim = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
-        targetPoint = pointA.transform;
-        anim.SetBool("isRunning", true);
+        currentPoint = pointA.transform;
+        anim.SetTrigger("MoveTrigger");
+        myTargetValid = true;
+        canRun = true;
         rend = this.gameObject.GetComponent<SpriteRenderer>();
     }
     void Update()
     {
-        if(Time.timeScale == 0 || !anim.GetBool("isRunning"))
+        runTimer += Time.deltaTime;
+        if (runTimer >= 1.33f)
+        {
+            if (canRun)
+            {
+                anim.SetTrigger("MoveTrigger");
+            }
+            runTimer = 0f;
+        }   
+        //if(Time.timeScale == 0 || !anim.GetBool("isRunning"))
+        if(Time.timeScale == 0)
         {
             return;
         }
-        healthCheck();
-        int negative = -1;
-        if (targetPoint == pointB.transform)
+        // int negative = -1;
+        // if (currentPoint == pointB.transform)
+        // {
+        //     negative *=-1;
+        // }
+        // body.velocity = new Vector2(speed*negative, 0);
+
+        Vector2 point = currentPoint.position - transform.position;
+        if (currentPoint == pointB.transform && myTargetValid)
         {
-            negative *=-1;
+            body.velocity = new Vector2(speed, 0);
         }
-        body.velocity = new Vector2(speed*negative, 0);
+        else if (currentPoint == pointA.transform && myTargetValid)
+        {
+            body.velocity = new Vector2(-speed, 0);
+        }
         
-        if (Mathf.Abs(transform.position.x - targetPoint.position.x) < 0.5f)
+        if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointB.transform)
         {
+            Debug.Log("I should flip now");
             flip();
-            anim.SetBool("isRunning", false);
-            StartCoroutine(goIdle());
-            if(targetPoint == pointB.transform)
-            {
-                targetPoint = pointA.transform;
-            }
-            else
-            {
-                targetPoint = pointB.transform;
-            }
+            currentPoint = pointA.transform;
+
         }
+        if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointA.transform)
+        {
+            Debug.Log("I should flip now");
+            flip();
+            currentPoint = pointB.transform;
+        }
+        healthCheck();
     }
     private void flip()
     {
@@ -76,11 +104,11 @@ public class SkeletonMovement : MonoBehaviour
         }
     }
 
-    IEnumerator goIdle() 
-    {
-        yield return new WaitForSeconds (2f);
-        anim.SetBool("isRunning", true);
-    }
+    // IEnumerator goIdle() 
+    // {
+    //     yield return new WaitForSeconds (2f);
+    //     anim.SetBool("isRunning", true);
+    // }
     
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -89,57 +117,62 @@ public class SkeletonMovement : MonoBehaviour
             health -=10;
             if(health <=0)
             {
-                anim.SetTrigger("death");
                 SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.3f);
-                Destroy(transform.parent.gameObject, 0.5f);
-                randomHeart();
+                anim.SetTrigger("DeathTrigger");
             }
             else
             {
-                anim.SetTrigger("hurt");
                 SoundFXManager.instance.PlaySoundFXClip(hurtSound, transform, .2f);
-                StartCoroutine(takeDamage());
+                //StartCoroutine(takeDamage());
             } 
         }
     }
     private void healthCheck()
     {
         if(health <= 0)
-        {
-            anim.SetTrigger("death");
-            SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.3f);
-            Destroy(transform.parent.gameObject, 0.5f);
-            randomHeart();
+        { 
+            myTargetValid = false;
+            canRun = false;
+            StartCoroutine(death());
         }
     }
     public void startAttack()
     {
-        anim.SetBool("isRunning", false);
-        anim.SetTrigger("attack");
+        //anim.SetBool("isRunning", false);
+        healthCheck();
+        canRun = false;
+        myTargetValid = false;
+        anim.SetTrigger("AttackTrigger");
+        SoundFXManager.instance.PlaySoundFXClip(attackSound, transform, .2f);
         StartCoroutine(attack());
     }
 
     IEnumerator attack()
     {
         healthCheck();
-        //isAttack = false;
         yield return new WaitForSeconds (.5f);
-        //audioSource.PlayOneShot(clip, 2f);
-        //audioSource.Play();
-        yield return new WaitForSeconds (.5f);
-        //SoundFXManager.instance.PlaySoundFXClip(attackSound, transform, 2f);
-        anim.SetBool("isRunning", true);
+        myTargetValid = true;
+        canRun = true;
     }
     IEnumerator takeDamage()
     {
-        rend.enabled = false;
+        this.gameObject.SetActive(false);
         yield return new WaitForSeconds (.1f);
-        rend.enabled = true;
+        this.gameObject.SetActive(true);
         yield return new WaitForSeconds (.1f);
-        rend.enabled = false;
+        this.gameObject.SetActive(false);
         yield return new WaitForSeconds (.1f);
-        rend.enabled = true;
+        this.gameObject.SetActive(true);
     }
+
+    IEnumerator death()
+    {
+        yield return new WaitForSeconds (1.5f);
+        //SoundFXManager.instance.PlaySoundFXClip(deathSound, transform, 0.1f);
+        Destroy(this.gameObject);
+        randomHeart();
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(pointA.transform.position, 0.5f);
