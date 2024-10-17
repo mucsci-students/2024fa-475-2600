@@ -16,7 +16,7 @@ namespace EthanTheHero
 		[Header("Basic Attack")]
 		public float basicAttack01Power = 0.5f;
 		public float basicAttack02Power = 0.5f;
-		public float basicAttack03Power = 0.9f;
+		public float basicAttack03Power = 0.5f;
 
 		//Sound Effects
 		[SerializeField] private AudioClip swordSwing1;
@@ -134,30 +134,52 @@ namespace EthanTheHero
 
 		private void BasicAttackMethod()
 		{
-
 			//Move player if player is in attacking state
 			if (transform.localScale.x == 1)
 			{
-				if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack01"))
-					myBody.velocity = new Vector2(basicAttack01Power, myBody.velocity.y);
+			if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack01"))
+				myBody.velocity = new Vector2(0.125f, myBody.velocity.y);
 
-				if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack02"))
-					myBody.velocity = new Vector2(basicAttack02Power, myBody.velocity.y);
+			if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack02"))
+				myBody.velocity = new Vector2(0.125f, myBody.velocity.y);
 
-				if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack03"))
-					myBody.velocity = new Vector2(basicAttack03Power, myBody.velocity.y);
+			if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack03"))
+					myBody.velocity = new Vector2(0.125f, myBody.velocity.y);
 			}
 			else
 			{
 				if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack01"))
-					myBody.velocity = new Vector2(-basicAttack01Power, myBody.velocity.y);
+					myBody.velocity = new Vector2(-0.125f, myBody.velocity.y);
 
 				if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack02"))
-					myBody.velocity = new Vector2(-basicAttack02Power, myBody.velocity.y);
+					myBody.velocity = new Vector2(-0.125f, myBody.velocity.y);
 
 				if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack03"))
-					myBody.velocity = new Vector2(-basicAttack03Power, myBody.velocity.y);
+					myBody.velocity = new Vector2(-0.125f, myBody.velocity.y);
 			}
+			//Move player if player is in attacking state
+			// if (transform.localScale.x == 1)
+			// {
+			// 	if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack01"))
+			// 		myBody.velocity = new Vector2(basicAttack01Power, myBody.velocity.y);
+
+			// 	if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack02"))
+			// 		myBody.velocity = new Vector2(basicAttack02Power, myBody.velocity.y);
+
+			// 	if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack03"))
+			// 		myBody.velocity = new Vector2(basicAttack03Power, myBody.velocity.y);
+			// }
+			// else
+			// {
+			// 	if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack01"))
+			// 		myBody.velocity = new Vector2(-basicAttack01Power, myBody.velocity.y);
+
+			// 	if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack02"))
+			// 		myBody.velocity = new Vector2(-basicAttack02Power, myBody.velocity.y);
+
+			// 	if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack03"))
+			// 		myBody.velocity = new Vector2(-basicAttack03Power, myBody.velocity.y);
+			// }
 
 		}
 
