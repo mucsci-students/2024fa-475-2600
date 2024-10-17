@@ -16,7 +16,7 @@ public class Heart_controller : MonoBehaviour
         if(other.tag == "Player"){
         // add your health or other desired functionality here
         Destroy(healthPack);
-        print("Health pack Destroyed");
+        //print("Health pack Destroyed");
         }
     }
 }

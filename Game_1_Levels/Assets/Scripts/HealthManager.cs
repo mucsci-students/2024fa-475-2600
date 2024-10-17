@@ -48,15 +48,15 @@ public class HealthManager : MonoBehaviour
             return;
         }
         
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            takeDamage(20);
-        }
+        // if (Input.GetKeyDown(KeyCode.R))
+        // {
+        //     takeDamage(20);
+        // }
 
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            heal(20);
-        }
+        // if (Input.GetKeyDown(KeyCode.E))
+        // {
+        //     heal(20);
+        // }
     }
 
     public void takeDamage (float damage)

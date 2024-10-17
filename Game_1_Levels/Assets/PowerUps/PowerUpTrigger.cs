@@ -50,7 +50,7 @@ public class PowerUpTrigger : MonoBehaviour
         auraControl.auraActive = true;
         
         Destroy(powerUp);
-        print("PowerUp Destroyed");
+        //print("PowerUp Destroyed");
         }
     }
 }
