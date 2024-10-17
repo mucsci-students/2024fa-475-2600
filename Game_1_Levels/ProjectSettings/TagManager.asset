@@ -36,8 +36,8 @@ TagManager:
   - Enemy
   - Player
   - Cave
-  - 
-  - 
+  - Hitbox
+  - Sword
   - 
   - 
   - 

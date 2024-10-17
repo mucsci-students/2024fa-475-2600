@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3868010443743010498}
   - component: {fileID: 7226284492759563688}
   - component: {fileID: 1247714118890440088}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: attackHitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -629,6 +629,7 @@ MonoBehaviour:
   heartPrefab: {fileID: 7669446628929368331, guid: a3791880e5a044931acdcccdf0d83fe8, type: 3}
   isDead: 0
   playerSwordDamage: 5
+  attackHitBox: {fileID: 0}
 --- !u!61 &2540483898827360367
 BoxCollider2D:
   m_ObjectHideFlags: 0
