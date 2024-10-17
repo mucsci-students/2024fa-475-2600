@@ -310,9 +310,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1f921a2497ec1449bdd3b3f23b7bdde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0
+  timer: 20
   auraActive: 0
-  auraTime: 20
+  auraTime: 30
 --- !u!114 &5369401806970935195
 MonoBehaviour:
   m_ObjectHideFlags: 0
