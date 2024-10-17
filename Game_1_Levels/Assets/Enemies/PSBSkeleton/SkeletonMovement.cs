@@ -47,7 +47,7 @@ public class SkeletonMovement : MonoBehaviour
         runTimer += Time.deltaTime;
         if (runTimer >= 1.33f)
         {
-            if (canRun)
+            if (canRun && isDead == false)
             {
                 anim.SetTrigger("MoveTrigger");
             }

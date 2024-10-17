@@ -23,6 +23,7 @@ public class SlimeMovement : MonoBehaviour
     public float speed = 1;
     public bool isDead = false;
     public GameObject heartPrefab;
+    public float playerSwordDamage = 10f;
 
     void Start()
     {
@@ -98,7 +99,7 @@ public class SlimeMovement : MonoBehaviour
     {
         if (other.tag == "Sword" && isDead == false)
         {
-            health -= 10;
+            health -= playerSwordDamage;
 
             if(health > 0)
             {
