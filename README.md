@@ -24,5 +24,5 @@
 #   Audio:
 #      https://assetstore.unity.com/packages/audio/music/8bit-music-062022-225623
 #      https://assetstore.unity.com/packages/audio/sound-fx/rpg-essentials-sound-effects-free-227708
-#      https://assetstore.unity.com/packages/audio/music/orchestral/free-music-pack-lo-fi-indie-metal-horror-orchestral- loops-281109
+#      https://assetstore.unity.com/packages/audio/music/orchestral/free-music-pack-lo-fi-indie-metal-horror-orchestral-loops-281109
 #      
