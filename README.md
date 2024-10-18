@@ -8,7 +8,7 @@
 # Controls: A / D move left and right, space jumps, W dashes in facing direction,
 #   S falls through special platforms, Left Mouse attacks in facing direction, and ESC pauses and unpauses
 #
-# Imported assets (modified for use in project):
+# Imported assets (under Standard Unity Asset Store EULA and modified for use in project):
 #   Terrain and Environment: 
 #      https://assetstore.unity.com/packages/2d/environments/2d-pixel-art-platformer-biome-american-forest-255694
 #      https://assetstore.unity.com/packages/2d/environments/2d-platfrom-tile-set-cave-61672
