@@ -138,24 +138,24 @@ namespace EthanTheHero
 			if (transform.localScale.x == 1)
 			{
 			if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack01"))
-				myBody.velocity = new Vector2(0.125f, myBody.velocity.y);
+				myBody.velocity = new Vector2(0.0f, myBody.velocity.y);
 
 			if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack02"))
-				myBody.velocity = new Vector2(0.125f, myBody.velocity.y);
+				myBody.velocity = new Vector2(0.0f, myBody.velocity.y);
 
 			if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack03"))
-					myBody.velocity = new Vector2(0.125f, myBody.velocity.y);
+					myBody.velocity = new Vector2(0.0f, myBody.velocity.y);
 			}
 			else
 			{
 				if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack01"))
-					myBody.velocity = new Vector2(-0.125f, myBody.velocity.y);
+					myBody.velocity = new Vector2(-0.0f, myBody.velocity.y);
 
 				if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack02"))
-					myBody.velocity = new Vector2(-0.125f, myBody.velocity.y);
+					myBody.velocity = new Vector2(-0.0f, myBody.velocity.y);
 
 				if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack03"))
-					myBody.velocity = new Vector2(-0.125f, myBody.velocity.y);
+					myBody.velocity = new Vector2(-0.0f, myBody.velocity.y);
 			}
 			//Move player if player is in attacking state
 			// if (transform.localScale.x == 1)
