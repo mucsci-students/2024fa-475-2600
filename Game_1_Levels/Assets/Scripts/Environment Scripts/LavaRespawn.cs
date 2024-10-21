@@ -7,6 +7,7 @@ public class LavaRespawn : MonoBehaviour
     private GameObject player;
     public Transform spawnPoint;
     public Transform newSpawn;
+    public Transform secondNewSpawn;
 
     void Start()
     {

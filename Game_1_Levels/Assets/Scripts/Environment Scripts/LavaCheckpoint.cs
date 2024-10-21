@@ -7,6 +7,7 @@ public class LavaCheckpoint : MonoBehaviour
     public Manager script;
     public LavaRespawn script2;
     public Transform orignalLavaSpawn;
+    public Transform newLavaSpawn;
     public int spawn = 1;
 
     void OnTriggerEnter2D (Collider2D other)
@@ -20,6 +21,10 @@ public class LavaCheckpoint : MonoBehaviour
             else if (spawn == 5)
             {
                 script2.spawnPoint = script2.newSpawn;
+            }
+            else if (spawn == 6)
+            {
+                script2.spawnPoint = newLavaSpawn;
             }
             else
             {

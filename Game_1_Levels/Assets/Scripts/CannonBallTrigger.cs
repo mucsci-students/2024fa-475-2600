@@ -6,11 +6,12 @@ public class CannonBallTrigger : MonoBehaviour
 
 {
     private float timer = 0f;
-    private GameObject cannonBall;
-    private Animator anim;
-    private bool inCollider = false;
+    public GameObject cannonBall;
+    public Animator anim;
+    public bool inCollider = false;
+    [SerializeField] private Collider2D boxCollider;
     [SerializeField] private AudioClip cannonFire;
-
+    
     void Start()
     {
         cannonBall = GameObject.FindWithTag("cannonBall");
@@ -36,18 +37,19 @@ public class CannonBallTrigger : MonoBehaviour
         {
             inCollider = true;
             SoundFXManager.instance.PlaySoundFXClip(cannonFire, transform, .1f);
+            boxCollider.enabled = false;
             anim.SetBool("inRange", true);
         }
         
         
     }
 
-    private void OnTriggerExit2D (Collider2D other)
-    {
-        if (other.tag == "Player")
-        {
-            inCollider = false;
-            anim.SetBool("inRange", false);
-        }
-    }
+    // private void OnTriggerExit2D (Collider2D other)
+    // {
+    //     if (other.tag == "Player")
+    //     {
+    //         inCollider = false;
+    //         anim.SetBool("inRange", false);
+    //     }
+    // }
 }
