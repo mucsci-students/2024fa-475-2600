@@ -45,8 +45,6 @@ namespace EthanTheHero
 		[SerializeField] public float runSoundVolume;
 		[SerializeField] private AudioClip dashSound;
 		[SerializeField] private AudioClip wallJumpSound;
-		[SerializeField] public AudioClip wallSlidingSound;
-		[SerializeField] public float wallSlidingSoundVolume;
 		public HealthManager script;
 
 
@@ -195,13 +193,6 @@ namespace EthanTheHero
 				jumpTime = Time.time + data.wallJumpTime;
 
 				script.isWallSliding = true;
-
-				timer += Time.deltaTime;
-				if(timer >= 1f)
-				{
-					SoundFXManager.instance.PlaySoundFXClip(wallSlidingSound, transform, wallSlidingSoundVolume);
-					timer = 0f;
-				}
 			}
 			else if (jumpTime < Time.time)
 				wallSliding = false;

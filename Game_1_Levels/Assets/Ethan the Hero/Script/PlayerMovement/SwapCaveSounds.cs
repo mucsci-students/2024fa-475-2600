@@ -10,8 +10,6 @@ public class SwapCaveSounds : MonoBehaviour
     [SerializeField] private AudioClip prevRunSound;
     [SerializeField] private float newRunVolume;
     [SerializeField] private AudioClip newRunSound;
-    [SerializeField] private AudioClip prevWallSlidingSound;
-    [SerializeField] private AudioClip newWallSlidingSound;
     
     void OnTriggerEnter2D (Collider2D other)
     {
@@ -19,7 +17,6 @@ public class SwapCaveSounds : MonoBehaviour
         {
             script.runSound = newRunSound;
             script.runSoundVolume = newRunVolume;
-            script.wallSlidingSound = newWallSlidingSound;
         }
         
     }
@@ -29,7 +26,6 @@ public class SwapCaveSounds : MonoBehaviour
         {
             script.runSound = prevRunSound;
             script.runSoundVolume = prevRunVolume;
-            script.wallSlidingSound = prevWallSlidingSound;
         }
     }
 }
