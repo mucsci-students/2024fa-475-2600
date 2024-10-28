@@ -1,0 +1,15 @@
+powerups damage via collider in enemies, not powerup
+powerups work uniquely, and separate from regular attack
+back to checkpoint respawn option in pause menu
+more types of enemies
+
+Bugs pointed out by reviewer Cullen Kurtz " Even if you’ve done the killing blow on the enemy, you can get hit by its corpse.
+I can run in place without moving anywhere when running into the invisible corpse of an enemy.
+No visual indicator of enemies taking damage from power-up abilities.
+I was able to fall through the map infinitely.
+You cannot jump at the edges of some blocks.
+When you die you can still move your character while in the death animation.
+Power up effects are able to activate even though character can’t swing their sword.
+Death animations for enemies sometimes doesn’t play.
+Can dash into certain terrain and enter the terrain.
+Enemy can sit atop players head and continuously attack them."
